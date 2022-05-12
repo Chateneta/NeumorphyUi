@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/neumorphy-ui",
       "sourceRoot": "projects/neumorphy-ui/src",
-      "prefix": "lib",
+      "prefix": "nui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

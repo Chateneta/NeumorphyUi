@@ -5,3 +5,7 @@
 export * from './lib/neumorphy-ui.service';
 export * from './lib/neumorphy-ui.component';
 export * from './lib/neumorphy-ui.module';
+export * from './lib/card/card.component';
+export * from './lib/button/button.component';
+export * from './lib/main/main.component';
+export * from './lib/row/row.component';

@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { NeumorphyUIComponent } from './neumorphy-ui.component';
+import { CardComponent } from './card/card.component';
+import { ButtonComponent } from './button/button.component';
 
-const COMPONENTS = [];
+const COMPONENTS = [
+  CardComponent,
+  ButtonComponent
+];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    NeumorphyUIComponent
+    NeumorphyUIComponent,
   ],
   imports: [
   ],

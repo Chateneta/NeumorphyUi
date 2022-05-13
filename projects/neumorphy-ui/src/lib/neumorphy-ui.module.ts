@@ -20,10 +20,12 @@ const COMPONENTS = [
     NeumorphyUIComponent,
   ],
   imports: [
+    CommonModule,
   ],
   exports: [
     ...COMPONENTS,
     NeumorphyUIComponent
   ]
 })
-export class NeumorphyUIModule { }
+export class NeumorphyUIModule {
+}

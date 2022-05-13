@@ -1,0 +1,44 @@
+.btn-rounded-nui.btn-default-nui{
+  border-radius: 50%;
+  background: #262322;
+  box-shadow:  8px 8px 24px #1b1918,
+  -8px -8px 24px #312d2c;
+  width: 2rem;
+}
+
+.btn-rect-nui.btn-default-nui{
+  border-radius: 15px;
+  background: #262322;
+  box-shadow:  8px 8px 24px #1b1918,
+  -8px -8px 24px #312d2c;
+}
+
+.btn-rect-nui.btn-active-nui {
+  border-radius: 15px;
+  background: #262322;
+  box-shadow: inset 8px 8px 24px #1b1918,
+  inset -8px -8px 24px #312d2c;
+}
+
+.btn-rounded-nui.btn-active-nui {
+  border-radius: 50%;
+  background: #262322;
+  box-shadow: inset 8px 8px 24px #1b1918,
+  inset -8px -8px 24px #312d2c;
+  width: 2rem;
+}
+
+.btn-sm-nui {
+  padding: 0.5rem;
+  height: 2rem;
+}
+
+.btn-md-nui {
+  padding: 1rem;
+  height: 2rem;
+}
+
+.btn-lg-nui {
+  padding: 1.5rem;
+  height: 2rem;
+}

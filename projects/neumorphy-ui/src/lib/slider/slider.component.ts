@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SliderComponent implements OnInit {
 
   constructor() { }
+  value:number = 5;
   sizeElement:string = "50% 100%";
   ngOnInit(): void {
   }
@@ -16,5 +17,10 @@ export class SliderComponent implements OnInit {
     this.sizeElement = event.srcElement.value*10 +'% 100%'
   }
 
-
+  getValue(){
+    return this.value;
+  }
+  setValue(newV:number){
+    this.value = newV;
+  }
 }

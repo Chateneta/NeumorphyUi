@@ -1,8 +1,9 @@
 .main{
-    width: 100vw;
     display: flex;
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
 }
+
 .dark{
     background-color: #18191A;
+    color: azure;
 }

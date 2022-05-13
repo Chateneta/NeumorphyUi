@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'nui-main',
@@ -9,7 +9,13 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
+  @Input() theme?:string;
+
   ngOnInit(): void {
+  }
+
+  getTheme(){
+    return this.theme;
   }
 
 }

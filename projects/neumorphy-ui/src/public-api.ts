@@ -9,3 +9,4 @@ export * from './lib/card/card.component';
 export * from './lib/button/button.component';
 export * from './lib/main/main.component';
 export * from './lib/row/row.component';
+export * from './lib/menu/menu.component';

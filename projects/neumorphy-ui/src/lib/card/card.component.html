@@ -1,1 +1,9 @@
-<p>card works!</p>
+<div class="card" [class]="getColor()">
+  <div class="title" *ngIf="title">{{title}}</div>
+  <div class="subtitle" *ngIf="subtitle">{{subtitle}}</div>
+  <div class="description" *ngIf="description">{{description}}</div>
+  <div class="buttons" *ngIf="button1 || button2">
+    <button *ngIf="button1.title">{{button1.title}}</button>
+    <button *ngIf="button2.title">{{button2.title}}</button>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.card {
+  font-family: Mukta, sans-serif;
+  border-radius: 48px;
+  background: rgb(250, 164, 73);
+  background: linear-gradient(100deg, rgba(250, 164, 73, 1) 0%, rgba(246, 204, 110, 1) 50%, rgba(250, 164, 73, 1) 100%);
+  box-shadow: 21px 21px 45px #9d9d9d, -21px -21px 45px #fff;
+  padding: 1em 2em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: .0125em;
+  line-height: 2rem;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: .0071428571em;
+  margin-bottom: 1rem;
+  color: #343434;
+}
+
+.description {
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: .0071428571em;
+  margin-bottom: 1rem;
+}
+
+.orangeyellow {
+  background: #F6CC6E;
+}
+
+.raisin-black {
+  background: #262322
+}
+
+.alabaster {
+  background: #ECEBE4;
+}
+
+.rajah {
+  background: #FAA449;
+}

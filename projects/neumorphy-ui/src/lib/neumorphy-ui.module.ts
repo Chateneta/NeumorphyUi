@@ -5,6 +5,7 @@ import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
 import { RowComponent } from './row/row.component';
 import { MenuComponent } from './menu/menu.component';
+import { SliderComponent } from './slider/slider.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -12,6 +13,7 @@ const COMPONENTS = [
   MainComponent,
   RowComponent,
   MenuComponent,
+  SliderComponent,
 ];
 
 @NgModule({

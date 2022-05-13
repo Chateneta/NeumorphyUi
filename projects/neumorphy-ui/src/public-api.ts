@@ -10,3 +10,4 @@ export * from './lib/button/button.component';
 export * from './lib/main/main.component';
 export * from './lib/row/row.component';
 export * from './lib/menu/menu.component';
+export * from './lib/slider/slider.component'

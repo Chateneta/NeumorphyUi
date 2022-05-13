@@ -16,7 +16,6 @@ export class MenuComponent implements OnInit {
   }
 
   getTheme(){
-    console.log(this.theme)
     return this.theme;
   }
   getMode(){

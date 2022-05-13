@@ -7,6 +7,7 @@ import { RowComponent } from './row/row.component';
 import { MenuComponent } from './menu/menu.component';
 import {CommonModule} from "@angular/common";
 import { InputComponent } from './input/input.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -14,13 +15,14 @@ const COMPONENTS = [
   MainComponent,
   RowComponent,
   MenuComponent,
+  InputComponent,
+  CheckboxComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
     NeumorphyUIComponent,
-    InputComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,6 @@ const COMPONENTS = [
   exports: [
     ...COMPONENTS,
     NeumorphyUIComponent,
-    InputComponent
   ]
 })
 export class NeumorphyUIModule {

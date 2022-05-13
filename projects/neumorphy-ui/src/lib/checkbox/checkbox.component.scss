@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
+
+* , *::after, *::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  background-color: #ebf5fc;
+  color: #6a9bd8;
+}
+
+.checkboxList {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;  // 隱藏框框
+  }
+  &__checkbox + label {
+    display: flex;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #262322;
+    box-shadow:  8px 8px 24px #1b1918,
+    -8px -8px 24px #312d2c;
+
+    cursor: pointer;
+    > i {
+      font-size: 2rem;
+      color: rgba(#6a9bd8, 0.8);
+    }
+  }
+  &__checkbox:checked + label {
+    box-shadow: inset 8px 8px 24px #1b1918,
+    inset -8px -8px 24px #312d2c;
+
+    > i {
+      font-size: 1.8rem;
+      color: rgba(#6a9bd8, 1);
+    }
+  }
+}

@@ -1,20 +1,23 @@
-.menu{
-    width: 100%;
-    max-height: 5rem;
+:host {
+  width: 100%;
+  max-height: 5rem;
 }
-.menu.fixed-bot{
-    position: fixed;
-    bottom:0px;
+
+:host.fixed-bot {
+  position: fixed;
+  bottom: 0px;
 }
-.menu.fixed-top{
-    position: fixed;
-    top:0px;
+
+:host.fixed-top {
+  position: fixed;
+  top: 0px;
 }
-.menu #buttons{
+
+:host #buttons {
 
 }
 
-.dark{
-    background-color: #18191A;
-    color: azure;
+:host .dark {
+  background-color: #18191A;
+  color: azure;
 }

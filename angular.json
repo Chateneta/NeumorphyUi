@@ -13,9 +13,6 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "project": "projects/neumorphy-ui/ng-package.json",
-            "styles": [
-              "../node_modules/font-awesome/css/font-awesome.css"
-            ]
           },
           "configurations": {
             "production": {

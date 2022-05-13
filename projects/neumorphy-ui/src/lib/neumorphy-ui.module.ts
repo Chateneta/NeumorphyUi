@@ -5,6 +5,8 @@ import { ButtonComponent } from './button/button.component';
 import { MainComponent } from './main/main.component';
 import { RowComponent } from './row/row.component';
 import { MenuComponent } from './menu/menu.component';
+import {CommonModule} from "@angular/common";
+import { InputComponent } from './input/input.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -18,13 +20,15 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS,
     NeumorphyUIComponent,
+    InputComponent,
   ],
   imports: [
     CommonModule,
   ],
   exports: [
     ...COMPONENTS,
-    NeumorphyUIComponent
+    NeumorphyUIComponent,
+    InputComponent
   ]
 })
 export class NeumorphyUIModule {

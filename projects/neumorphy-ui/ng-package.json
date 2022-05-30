@@ -3,5 +3,6 @@
   "dest": "../../dist/neumorphy-ui",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["./scss/variables.scss"]
 }

@@ -11,3 +11,5 @@ export * from './lib/main/main.component';
 export * from './lib/row/row.component';
 export * from './lib/menu/menu.component';
 export * from './lib/slider/slider.component'
+export * from './lib/input/input.component';
+export * from './lib/checkbox/checkbox.component';

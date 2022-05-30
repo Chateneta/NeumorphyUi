@@ -1,0 +1,35 @@
+:host button{
+  background: #262322;
+  border: none;
+  font-size: 1rem;
+  color: #ecebe4;
+  box-shadow: 8px 8px 24px #1b1918,
+  -8px -8px 24px #312d2c;
+  min-width: 5rem;
+  max-width: 10rem;
+  height: 2.5rem;
+  &:active {
+    box-shadow: inset 8px 8px 24px #1b1918,
+    inset -8px -8px 24px #312d2c;
+  }
+
+  &.btn-rounded-nui {
+    border-radius: 50%;
+  }
+
+  &.btn-rect-nui {
+    border-radius: 15px;
+  }
+
+  &.btn-sm-nui {
+    padding: 0.5rem;
+  }
+
+  &.btn-md-nui {
+    padding: 1rem;
+  }
+
+  &.btn-lg-nui {
+    padding: 1.5rem;
+  }
+}

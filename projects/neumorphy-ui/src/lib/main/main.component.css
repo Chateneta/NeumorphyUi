@@ -1,9 +1,7 @@
-.main{
+:host{
     display: flex;
     padding: 1rem 2rem;
-}
-
-.dark{
+    flex-wrap: wrap;
     background-color: #262322;
     color: #ECEBE4;
 }

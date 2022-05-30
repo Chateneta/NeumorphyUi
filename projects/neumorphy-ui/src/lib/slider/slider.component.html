@@ -1,4 +1,12 @@
 <div class="slider">
-    <label for="">test</label>
-    <input type="range" id="" [value]="value" name="" min="0" max="10" (input)="rangeChangeHandle($event)" [style.background-size]="sizeElement">
+    <label for="{{rangeId}}">{{label}}</label>
+    <input 
+        type="range" 
+        id="{{rangeId}}" 
+        [value]="value" 
+        min="0" 
+        max="10" 
+        (input)="rangeChangeHandle($event)" 
+        [style.background-size]="sizeElement"
+    >
 </div>

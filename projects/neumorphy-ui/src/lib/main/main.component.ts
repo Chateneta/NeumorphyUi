@@ -9,13 +9,10 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  @Input() theme?:string;
 
   ngOnInit(): void {
   }
 
-  getTheme(){
-    return this.theme;
-  }
+  
 
 }

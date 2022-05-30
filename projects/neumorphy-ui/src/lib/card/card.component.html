@@ -6,6 +6,7 @@
      [style.box-shadow]="getElevation()"
      [style.justify-content]="justify"
      [style.align-items]="align"
+     [style.text-align]="textAlign"
      [style.padding]="getPadding()"
      [style.width]="width">
 
@@ -14,6 +15,7 @@
     <img [src]="headerImage"
          [style.border-radius]="borderRadius+'px'"
          [style.height]="imgHeight"
+         style="box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;"
          alt="image">
   </div>
   <div class="content"
@@ -54,7 +56,7 @@
      [style.padding]="getPadding()"
      [style.width]="width">
   <img [src]="itemImage" [style.border-radius]="borderRadius+'px'"
-       alt="image" class="item-image" style="margin-right: 1em;height: 4em">
+       alt="image" class="item-image">
   <div class="item-content" *ngIf="title || subtitle">
     <div class="title" *ngIf="title">{{title}}</div>
     <div class="subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>

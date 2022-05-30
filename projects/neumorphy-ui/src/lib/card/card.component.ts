@@ -13,20 +13,21 @@ export class CardComponent implements OnInit {
   @Input() button1: any;//Button
   @Input() button2: any; //Button
   @Input() buttonItem: any; //Button
-  @Input() color = 'alabaster'; //orangeyellow / raisin / alabaster / rajah
+  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';
   @Input() borderRadius = '12'; //Choisir le border radius
-  @Input() elevation = 'sm'; //sm / md / lg / xl
-  @Input() display = 'buttons'; //buttons / image / item
+  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';
+  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';
   @Input() headerImage = '';
   @Input() imgSrc = '';
-  @Input() justify = 'left'; //left / right / center
-  @Input() align = 'flex-start'; //flex-start / flex-end / center
+  @Input() justify: 'left' | 'right' | 'center' = 'left';
+  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';
+  @Input() textAlign: 'center' | 'start' | 'end' = 'center';
   @Input() itemImage = '';
   @Input() width = '';
   @Input() sense = 'column';
   @Input() imgHeight = '';
-  @Input() padding = 'sm'; //sm / md / lg / xl
-  @Input() items : any;
+  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
+  @Input() items: any;
 
   getBackgroundColor() {
     switch (this.color) {

@@ -8,6 +8,8 @@ import { MenuComponent } from './menu/menu.component';
 import {CommonModule} from "@angular/common";
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ListComponent } from './list/list.component';
+import { ListItemComponent } from './list-item/list-item.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -17,6 +19,8 @@ const COMPONENTS = [
   MenuComponent,
   InputComponent,
   CheckboxComponent,
+  ListComponent,
+  ListItemComponent,
 ];
 
 @NgModule({

@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  @Input() theme?: string;
   @Input() mode?: string;
 
   constructor() { }
@@ -15,10 +14,6 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getTheme(){
-    console.log(this.theme)
-    return this.theme;
-  }
   getMode(){
     return this.mode;
   }

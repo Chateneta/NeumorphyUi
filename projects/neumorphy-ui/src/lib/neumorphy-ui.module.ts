@@ -12,6 +12,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { TextComponent } from './text/text.component';
+import { TitleComponent } from './title/title.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -25,6 +26,7 @@ const COMPONENTS = [
   ListComponent,
   ListItemComponent,
   TextComponent,
+  TitleComponent,
 ];
 
 @NgModule({

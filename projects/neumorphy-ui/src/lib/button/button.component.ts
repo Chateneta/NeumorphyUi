@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
  * ## Usage
  *
  * ```ts
- * <nui-button [label]="'label'" [rounded]="false" [active]="false"></nui-button>
+ * <nui-button [label]="'label'" [size]="'sm'" [rounded]="false" [active]="false"></nui-button>
  * ```
  */
 @Component({

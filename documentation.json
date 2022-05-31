@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "User",
-            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "id": "interface-User-dcc5c3137cd472dd0002d85b562efd23162e3eff53ca4438a6251e6c46e3b8299076255380d1d42f386510cb6f2cbaab49fa5b5f253be459cdc3869428c5c400",
             "file": "stories/User.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface User {}\n",
+            "sourceCode": "export interface User {}\r\n",
             "properties": [],
             "indexSignatures": [],
             "methods": []
@@ -44,7 +44,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "id": "component-ButtonComponent-8ceaf520f96e5437b08eeda244d84efb29effe62ddca4fc38eaa229085c2a1126c5715e61445bae741505aca1e4d377b350cb05fadd1dc45d9b2bbf7527029f1",
             "file": "stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -77,15 +77,15 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 711,
-                            "end": 724,
+                            "pos": 747,
+                            "end": 761,
                             "flags": 4227072,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "kind": 325,
                             "tagName": {
-                                "pos": 712,
-                                "end": 720,
+                                "pos": 748,
+                                "end": 756,
                                 "flags": 4227072,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -145,11 +145,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'storybook-button',\r\n  template: ` <button\r\n    type=\"button\"\r\n    (click)=\"onClick.emit($event)\"\r\n    [ngClass]=\"classes\"\r\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n  >\r\n    {{ label }}\r\n  </button>`,\r\n  styleUrls: ['./button.css'],\r\n})\r\nexport default class ButtonComponent {\r\n  /**\r\n   * Is this the principal call to action on the page?\r\n   */\r\n  @Input()\r\n  primary = false;\r\n\r\n  /**\r\n   * What background color to use\r\n   */\r\n  @Input()\r\n  backgroundColor?: string;\r\n\r\n  /**\r\n   * How large should the button be?\r\n   */\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  /**\r\n   * Button contents\r\n   *\r\n   * @required\r\n   */\r\n  @Input()\r\n  label = 'Button';\r\n\r\n  /**\r\n   * Optional click handler\r\n   */\r\n  @Output()\r\n  onClick = new EventEmitter<Event>();\r\n\r\n  public get classes(): string[] {\r\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\r\n\r\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "data": ".storybook-button {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-weight: 700;\r\n  border: 0;\r\n  border-radius: 3em;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  line-height: 1;\r\n}\r\n.storybook-button--primary {\r\n  color: white;\r\n  background-color: #1ea7fd;\r\n}\r\n.storybook-button--secondary {\r\n  color: #333;\r\n  background-color: transparent;\r\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\r\n}\r\n.storybook-button--small {\r\n  font-size: 12px;\r\n  padding: 10px 16px;\r\n}\r\n.storybook-button--medium {\r\n  font-size: 14px;\r\n  padding: 11px 20px;\r\n}\r\n.storybook-button--large {\r\n  font-size: 16px;\r\n  padding: 12px 24px;\r\n}\r\n",
                     "styleUrl": "./button.css"
                 }
             ],
@@ -168,7 +168,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-165fe4896afbeb79cd8c93374bb95b6ce051652e7c7b7f9e3345b6ffe7a4c3beb04ad8c3934223273fdd95cc63566ab35c1e4b37aeb4b5b6251b2d2f8412d097-1",
+            "id": "component-ButtonComponent-c4527974d924c962b554d99895522829d259bbfc3c68205048559954ee1e68ec8c932f2f6d16e530832cf2d78beb4b1eba7b6aa6a83a057228563429d044d30b-1",
             "file": "projects/neumorphy-ui/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -190,7 +190,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 22,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -199,7 +199,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 10,
+                    "line": 19,
                     "type": "string",
                     "decorators": []
                 },
@@ -208,7 +208,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 21,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -217,7 +217,7 @@
                     "defaultValue": "'sm'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 20,
                     "type": "string",
                     "decorators": []
                 }
@@ -231,7 +231,7 @@
                     "optional": false,
                     "returnType": "\"btn-sm-nui \" | \"btn-md-nui \" | \"btn-lg-nui \"",
                     "typeParameters": [],
-                    "line": 32,
+                    "line": 41,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -241,7 +241,7 @@
                     "optional": false,
                     "returnType": "\"btn-active-nui \" | \"btn-default-nui \"",
                     "typeParameters": [],
-                    "line": 25,
+                    "line": 34,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -251,7 +251,7 @@
                     "optional": false,
                     "returnType": "\"btn-rounded-nui \" | \"btn-rect-nui \"",
                     "typeParameters": [],
-                    "line": 18,
+                    "line": 27,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -260,10 +260,10 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
+            "description": "<p>Composant permettant de créer des boutons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;nui-button [label]=&quot;&#39;label&#39;&quot; [size]=&quot;&#39;sm&#39;&quot; [rounded]=&quot;false&quot; [active]=&quot;false&quot;&gt;&lt;/nui-button&gt;</code></pre></div>",
+            "rawdescription": "\n\nComposant permettant de créer des boutons personnalisés\n\n## Usage\n\n```ts\n<nui-button [label]=\"'label'\" [size]=\"'sm'\" [rounded]=\"false\" [active]=\"false\"></nui-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, Input} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent {\r\n\r\n  @Input() label = '';\r\n  @Input() size = 'sm';\r\n  @Input() rounded = false;\r\n  @Input() active = false;\r\n\r\n  constructor() {\r\n  }\r\n\r\n  isRounded() {\r\n    if (this.rounded) {\r\n      return 'btn-rounded-nui '\r\n    }\r\n    return 'btn-rect-nui '\r\n  }\r\n\r\n  isActive() {\r\n    if (this.active) {\r\n      return 'btn-active-nui '\r\n    }\r\n    return 'btn-default-nui '\r\n  }\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'btn-sm-nui '\r\n\r\n      case 'md':\r\n        return 'btn-md-nui '\r\n\r\n      case 'lg':\r\n        return 'btn-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import {Component, Input} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des boutons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <nui-button [label]=\"'label'\" [size]=\"'sm'\" [rounded]=\"false\" [active]=\"false\"></nui-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'nui-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent {\r\n\r\n  @Input() label = '';\r\n  @Input() size = 'sm';\r\n  @Input() rounded = false;\r\n  @Input() active = false;\r\n\r\n  constructor() {\r\n  }\r\n\r\n  isRounded() {\r\n    if (this.rounded) {\r\n      return 'btn-rounded-nui '\r\n    }\r\n    return 'btn-rect-nui '\r\n  }\r\n\r\n  isActive() {\r\n    if (this.active) {\r\n      return 'btn-active-nui '\r\n    }\r\n    return 'btn-default-nui '\r\n  }\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'btn-sm-nui '\r\n\r\n      case 'md':\r\n        return 'btn-md-nui '\r\n\r\n      case 'lg':\r\n        return 'btn-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -278,7 +278,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 22
             },
             "isDuplicate": true,
             "duplicateId": 1,
@@ -287,7 +287,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-47ce5f4f0bbbe5e50756f9330cb55395e12c3e89f6252dd1223b0c29734b121a537c55097532d3820dd6e9ba08b8400ff1238240a3d112b5ae3a3c989e0ce54a",
+            "id": "component-CardComponent-87b1dc6b19367cfdb3c2fcfead0928e273d469801ea3e804c8b4da26c9dcc6f7555f26019026fb8b2c6f7ebf26343a25a754096be6e0e278e14a94cc845cbd0e",
             "file": "projects/neumorphy-ui/src/lib/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -310,7 +310,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 23,
-                    "type": "string",
+                    "type": "\"flex-start\" | \"flex-end\" | \"center\"",
                     "decorators": []
                 },
                 {
@@ -352,7 +352,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 16,
-                    "type": "string",
+                    "type": "\"orangeyellow\" | \"raisin\" | \"alabaster\" | \"rajah\"",
                     "decorators": []
                 },
                 {
@@ -370,16 +370,16 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "string",
+                    "type": "\"buttons\" | \"image\" | \"item\"",
                     "decorators": []
                 },
                 {
                     "name": "elevation",
-                    "defaultValue": "'sm'",
+                    "defaultValue": "'md'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 18,
-                    "type": "string",
+                    "type": "\"sm\" | \"md\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
                 {
@@ -396,7 +396,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
+                    "line": 28,
                     "type": "string",
                     "decorators": []
                 },
@@ -414,7 +414,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 24,
+                    "line": 25,
                     "type": "string",
                     "decorators": []
                 },
@@ -422,7 +422,7 @@
                     "name": "items",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 29,
+                    "line": 30,
                     "type": "any",
                     "decorators": []
                 },
@@ -432,7 +432,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 22,
-                    "type": "string",
+                    "type": "\"left\" | \"right\" | \"center\"",
                     "decorators": []
                 },
                 {
@@ -440,8 +440,8 @@
                     "defaultValue": "'sm'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 28,
-                    "type": "string",
+                    "line": 29,
+                    "type": "\"none\" | \"sm\" | \"md\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
                 {
@@ -449,7 +449,7 @@
                     "defaultValue": "'column'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 27,
                     "type": "string",
                     "decorators": []
                 },
@@ -460,6 +460,15 @@
                     "deprecationMessage": "",
                     "line": 11,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textAlign",
+                    "defaultValue": "'center'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "\"center\" | \"start\" | \"end\"",
                     "decorators": []
                 },
                 {
@@ -476,7 +485,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 26,
                     "type": "string",
                     "decorators": []
                 }
@@ -490,7 +499,7 @@
                     "optional": false,
                     "returnType": "\"linear-gradient(145deg, #ddb863, #ffda76)\" | \"linear-gradient(145deg, #22201f, #292524)\" | \"linear-gradient(145deg, #d4d4cd, #fdfbf4)\" | \"linear-gradient(145deg, #e19442, #ffaf4e)\"",
                     "typeParameters": [],
-                    "line": 31,
+                    "line": 32,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -500,7 +509,7 @@
                     "optional": false,
                     "returnType": "\"black\" | \"white\"",
                     "typeParameters": [],
-                    "line": 46,
+                    "line": 47,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -510,7 +519,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 61,
+                    "line": 62,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -520,7 +529,7 @@
                     "optional": false,
                     "returnType": "\"0\" | \"0.5em 1em\" | \"1em 2em\" | \"1.5em 3em\" | \"2em 4em\"",
                     "typeParameters": [],
-                    "line": 94,
+                    "line": 95,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -530,7 +539,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 114,
+                    "line": 115,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -542,11 +551,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1: any;//Button\r\n  @Input() button2: any; //Button\r\n  @Input() buttonItem: any; //Button\r\n  @Input() color = 'alabaster'; //orangeyellow / raisin / alabaster / rajah\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation = 'sm'; //sm / md / lg / xl\r\n  @Input() display = 'buttons'; //buttons / image / item\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify = 'left'; //left / right / center\r\n  @Input() align = 'flex-start'; //flex-start / flex-end / center\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding = 'sm'; //sm / md / lg / xl\r\n  @Input() items : any;\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n      case 'md':\r\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\r\n      case 'lg':\r\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\r\n      case 'xl':\r\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\r\n      default:\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1: any;//Button\r\n  @Input() button2: any; //Button\r\n  @Input() buttonItem: any; //Button\r\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify: 'left' | 'right' | 'center' = 'left';\r\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';\r\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() items: any;\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n      case 'md':\r\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\r\n      case 'lg':\r\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\r\n      case 'xl':\r\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\r\n      default:\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');\r\n\r\n.card {\r\n  font-family: Mukta, sans-serif;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0 ;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content{\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');\r\n\r\n.card {\r\n  font-family: Mukta, sans-serif;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-image {\r\n  margin-right: 1em;\r\n  height: 4em;\r\n  box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
                     "styleUrl": "./card.component.css"
                 }
             ],
@@ -557,12 +566,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 109
+                "line": 110
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\r\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0em;\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\">\r\n      <nui-button [active]=\"button1.active\" [size]=\"button1.size\" [label]=\"button1.label\"\r\n                  style=\"margin-right: 1em\"></nui-button>\r\n      <nui-button [active]=\"button2.active\" [size]=\"button2.size\" [label]=\"button2.label\"\r\n                  style=\"margin-right: 1em\"></nui-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='image'\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='item'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\" style=\"margin-right: 1em;height: 4em\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <nui-button [rounded]=\"true\" [active]=\"buttonItem.active\" size=\"sm\" [label]=\"buttonItem.label\"></nui-button>\r\n  </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.text-align]=\"textAlign\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\r\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0em;\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\">\r\n      <nui-button [active]=\"button1.active\" [size]=\"button1.size\" [label]=\"button1.label\"\r\n                  style=\"margin-right: 1em\"></nui-button>\r\n      <nui-button [active]=\"button2.active\" [size]=\"button2.size\" [label]=\"button2.label\"\r\n                  style=\"margin-right: 1em\"></nui-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='image'\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='item'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <nui-button [rounded]=\"true\" [active]=\"buttonItem.active\" size=\"sm\" [label]=\"buttonItem.label\"></nui-button>\r\n  </div>\r\n</div>\r\n"
         },
         {
             "name": "CheckboxComponent",
@@ -614,7 +623,7 @@
         },
         {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "id": "component-HeaderComponent-bda17aa3451a9f731685153f2587877b8267c32007f05e7abad3581336e6bc02346a1b660e8c69c4d90b4526b6e047b3ac1f4246252c9dc83985c9148aab5e97",
             "file": "stories/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -675,11 +684,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { User } from './User';\r\n\r\n@Component({\r\n  selector: 'storybook-header',\r\n  template: `<header>\r\n    <div class=\"wrapper\">\r\n      <div>\r\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <g fill=\"none\" fillRule=\"evenodd\">\r\n            <path\r\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\r\n              fill=\"#FFF\"\r\n            />\r\n            <path\r\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\r\n              fill=\"#555AB9\"\r\n            />\r\n            <path\r\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\r\n              fill=\"#91BAF8\"\r\n            />\r\n          </g>\r\n        </svg>\r\n        <h1>Acme</h1>\r\n      </div>\r\n      <div>\r\n        <div *ngIf=\"user\">\r\n          <span class=\"welcome\">\r\n            Welcome, <b>{{ user.name }}</b\r\n            >!\r\n          </span>\r\n          <storybook-button\r\n            *ngIf=\"user\"\r\n            size=\"small\"\r\n            (onClick)=\"onLogout.emit($event)\"\r\n            label=\"Log out\"\r\n          ></storybook-button>\r\n        </div>\r\n        <div *ngIf=\"!user\">\r\n          <storybook-button\r\n            *ngIf=\"!user\"\r\n            size=\"small\"\r\n            class=\"margin-left\"\r\n            (onClick)=\"onLogin.emit($event)\"\r\n            label=\"Log in\"\r\n          ></storybook-button>\r\n          <storybook-button\r\n            *ngIf=\"!user\"\r\n            primary\r\n            size=\"small\"\r\n            primary=\"true\"\r\n            class=\"margin-left\"\r\n            (onClick)=\"onCreateAccount.emit($event)\"\r\n            label=\"Sign up\"\r\n          ></storybook-button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>`,\r\n  styleUrls: ['./header.css'],\r\n})\r\nexport default class HeaderComponent {\r\n  @Input()\r\n  user: User | null = null;\r\n\r\n  @Output()\r\n  onLogin = new EventEmitter<Event>();\r\n\r\n  @Output()\r\n  onLogout = new EventEmitter<Event>();\r\n\r\n  @Output()\r\n  onCreateAccount = new EventEmitter<Event>();\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "data": ".wrapper {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\r\n  padding: 15px 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\nsvg {\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\nh1 {\r\n  font-weight: 900;\r\n  font-size: 20px;\r\n  line-height: 1;\r\n  margin: 6px 0 6px 10px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\nbutton + button {\r\n  margin-left: 10px;\r\n}\r\n\r\n.welcome {\r\n  color: #333;\r\n  font-size: 14px;\r\n  margin-right: 10px;\r\n}\r\n",
                     "styleUrl": "./header.css"
                 }
             ],
@@ -774,8 +783,132 @@
             "templateData": "<div class=\"form\">\r\n  <input type=\"text\" [class]=\"'input-nui ' + getSize()\" placeholder=\"{{placeholder}}\">\r\n</div>\r\n"
         },
         {
+            "name": "ListComponent",
+            "id": "component-ListComponent-dba6d3fadedf17e3034e89f74c9d058626b910167960a2615673e65a563bb3174666ae5d863248cc4269ed020a89c88d9732d766d82f7a753f99fa439dc04783",
+            "file": "projects/neumorphy-ui/src/lib/list/list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-list",
+            "styleUrls": [
+                "./list.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-list',\r\n  templateUrl: './list.component.html',\r\n  styleUrls: ['./list.component.css']\r\n})\r\nexport class ListComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "ul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n",
+                    "styleUrl": "./list.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ul>\r\n  <ng-content>\r\n  </ng-content>\r\n</ul>\r\n"
+        },
+        {
+            "name": "ListItemComponent",
+            "id": "component-ListItemComponent-f751091195868be347c0b2be4d590a1aebd2c0dda386515f52023e040f9aed04cf5d802f4b6269a473bcfb4125b514ba362f6f871bc62aa46879d7363edbe3f5",
+            "file": "projects/neumorphy-ui/src/lib/list-item/list-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-list-item",
+            "styleUrls": [
+                "./list-item.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list-item.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-list-item',\r\n  templateUrl: './list-item.component.html',\r\n  styleUrls: ['./list-item.component.css']\r\n})\r\nexport class ListItemComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./list-item.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<li>\r\n  <ng-content></ng-content>\r\n</li>\r\n"
+        },
+        {
             "name": "MainComponent",
-            "id": "component-MainComponent-4d9cfdb432b1846ba8c0382b4c5440159d668d04100b5a9fe566b7dd7781f393e24bff27b413b6fa603ff34ee75a4c46ec888d62e63abaccd18e409f7fc50182",
+            "id": "component-MainComponent-dc5a996c9231dc16b8f69252a89e409e5c92093504313525e9bc162c2d791f2b9ef1229b66b841f981d482049529e0f82ce0c2156f8d34ca6e237bf9b55cab8c",
             "file": "projects/neumorphy-ui/src/lib/main/main.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -791,12 +924,74 @@
                 "./main.component.html"
             ],
             "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-main',\r\n  templateUrl: './main.component.html',\r\n  styleUrls: ['./main.component.css']\r\n})\r\nexport class MainComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  \r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host{\r\n    display: flex;\r\n    padding: 1rem 2rem;\r\n    flex-wrap: wrap;\r\n    background-color: #262322;\r\n    color: #ECEBE4;\r\n}",
+                    "styleUrl": "./main.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-content></ng-content>"
+        },
+        {
+            "name": "MenuComponent",
+            "id": "component-MenuComponent-2b1a61077dc1d40b6ebca6134e8cb5eaddda93a698322eabddac30e1f98342c7e950a100eb781df1f4fbf26945c7514a0f70dbc074d5a01358994990a3ee4d01",
+            "file": "projects/neumorphy-ui/src/lib/menu/menu.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-menu",
+            "styleUrls": [
+                "./menu.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./menu.component.html"
+            ],
+            "viewProviders": [],
             "inputsClass": [
                 {
-                    "name": "theme",
+                    "name": "mode",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 10,
                     "type": "string",
                     "decorators": []
                 }
@@ -805,7 +1000,7 @@
             "propertiesClass": [],
             "methodsClass": [
                 {
-                    "name": "getTheme",
+                    "name": "getMode",
                     "args": [],
                     "optional": false,
                     "returnType": "string",
@@ -832,110 +1027,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-main',\r\n  templateUrl: './main.component.html',\r\n  styleUrls: ['./main.component.css']\r\n})\r\nexport class MainComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  @Input() theme?:string;\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  getTheme(){\r\n    return this.theme;\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-menu',\r\n  templateUrl: './menu.component.html',\r\n  styleUrls: ['./menu.component.css']\r\n})\r\nexport class MenuComponent implements OnInit {\r\n\r\n  @Input() mode?: string;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  getMode(){\r\n    return this.mode;\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".main{\r\n    display: flex;\r\n    padding: 1rem 2rem;\r\n}\r\n\r\n.dark{\r\n    background-color: #18191A;\r\n    color: azure;\r\n}",
-                    "styleUrl": "./main.component.css"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<div [class]=\"'main '+ getTheme()\">\r\n    <ng-content></ng-content>\r\n</div>"
-        },
-        {
-            "name": "MenuComponent",
-            "id": "component-MenuComponent-c0ad2999bbf911b61360c6d293adb6c2f55c6cba536c9a262b6b87a7b529b2b5d314e3ff1c8dc85253e1aaab81ef4a8ce400bb664de444d51c33a0e830fba3e6",
-            "file": "projects/neumorphy-ui/src/lib/menu/menu.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "nui-menu",
-            "styleUrls": [
-                "./menu.component.css"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./menu.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "mode",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 11,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "theme",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 10,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "getMode",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "string",
-                    "typeParameters": [],
-                    "line": 22,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "getTheme",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "string",
-                    "typeParameters": [],
-                    "line": 18,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 15,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-menu',\r\n  templateUrl: './menu.component.html',\r\n  styleUrls: ['./menu.component.css']\r\n})\r\nexport class MenuComponent implements OnInit {\r\n\r\n  @Input() theme?: string;\r\n  @Input() mode?: string;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  getTheme(){\r\n    console.log(this.theme)\r\n    return this.theme;\r\n  }\r\n  getMode(){\r\n    return this.mode;\r\n  }\r\n\r\n}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ":host {\r\n  width: 100%;\r\n  max-height: 5rem;\r\n}\r\n\r\n:host.fixed-bot {\r\n  position: fixed;\r\n  bottom: 0px;\r\n}\r\n\r\n:host.fixed-top {\r\n  position: fixed;\r\n  top: 0px;\r\n}\r\n\r\n:host #buttons {\r\n\r\n}\r\n\r\n:host .dark {\r\n  background-color: #18191A;\r\n  color: azure;\r\n}\r\n",
+                    "data": ":host {\r\n  width: 100%;\r\n  max-height: 5rem;\r\n}\r\n\r\n:host.fixed-bot {\r\n  position: fixed;\r\n  bottom: 0px;\r\n}\r\n\r\n:host.fixed-top {\r\n  position: fixed;\r\n  top: 0px;\r\n}\r\n\r\n:host #buttons {\r\n\r\n}\r\n\r\n\r\n:host .dark {\r\n  background-color: #18191A;\r\n  color: azure;\r\n}\r\n",
                     "styleUrl": "./menu.component.css"
                 }
             ],
@@ -946,12 +1042,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 11
+                "line": 10
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<nui-main>\r\n  <nui-row>\r\n    <ng-content id=\"buttons\"></ng-content>\r\n  </nui-row>\r\n</nui-main>\r\n"
+            "templateData": "<nui-main>\r\n  <nui-row>\r\n    <ng-content id=\"buttons\"></ng-content>\r\n  </nui-row>\r\n</nui-main>"
         },
         {
             "name": "NeumorphyUIComponent",
@@ -1008,7 +1104,7 @@
         },
         {
             "name": "PageComponent",
-            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "id": "component-PageComponent-1fc7c24c98b4f0b0f413d91f5a6126f11ad55647457f5a7f372b7f83fe8ecd6dbe67b5ca4b826ed20b9bfbc04d5606b15f82a203b1311f98b18bd28ec9f4fc7c",
             "file": "stories/page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1076,11 +1172,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { User } from './User';\r\n\r\n@Component({\r\n  selector: 'storybook-page',\r\n  template: `<article>\r\n    <storybook-header\r\n      [user]=\"user\"\r\n      (onLogout)=\"doLogout()\"\r\n      (onLogin)=\"doLogin()\"\r\n      (onCreateAccount)=\"doCreateAccount()\"\r\n    ></storybook-header>\r\n    <section>\r\n      <h2>Pages in Storybook</h2>\r\n      <p>\r\n        We recommend building UIs with a\r\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\r\n          <strong>component-driven</strong>\r\n        </a>\r\n        process starting with atomic components and ending with pages.\r\n      </p>\r\n      <p>\r\n        Render pages with mock data. This makes it easy to build and review page states without\r\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\r\n        in Storybook:\r\n      </p>\r\n      <ul>\r\n        <li>\r\n          Use a higher-level connected component. Storybook helps you compose such data from the\r\n          \"args\" of child component stories\r\n        </li>\r\n        <li>\r\n          Assemble data in the page component from your services. You can mock these services out\r\n          using Storybook.\r\n        </li>\r\n      </ul>\r\n      <p>\r\n        Get a guided tutorial on component-driven development at\r\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\r\n          Storybook tutorials\r\n        </a>\r\n        . Read more in the\r\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\r\n        .\r\n      </p>\r\n      <div class=\"tip-wrapper\">\r\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\r\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <g fill=\"none\" fillRule=\"evenodd\">\r\n            <path\r\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\r\n              id=\"a\"\r\n              fill=\"#999\"\r\n            />\r\n          </g>\r\n        </svg>\r\n        Viewports addon in the toolbar\r\n      </div>\r\n    </section>\r\n  </article>`,\r\n  styleUrls: ['./page.css'],\r\n})\r\nexport default class PageComponent {\r\n  user: User | null = null;\r\n\r\n  doLogout() {\r\n    this.user = null;\r\n  }\r\n\r\n  doLogin() {\r\n    this.user = { name: 'Jane Doe' };\r\n  }\r\n\r\n  doCreateAccount() {\r\n    this.user = { name: 'Jane Doe' };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "data": "section {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-size: 14px;\r\n  line-height: 24px;\r\n  padding: 48px 20px;\r\n  margin: 0 auto;\r\n  max-width: 600px;\r\n  color: #333;\r\n}\r\n\r\nsection h2 {\r\n  font-weight: 900;\r\n  font-size: 32px;\r\n  line-height: 1;\r\n  margin: 0 0 4px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\nsection p {\r\n  margin: 1em 0;\r\n}\r\n\r\nsection a {\r\n  text-decoration: none;\r\n  color: #1ea7fd;\r\n}\r\n\r\nsection ul {\r\n  padding-left: 30px;\r\n  margin: 1em 0;\r\n}\r\n\r\nsection li {\r\n  margin-bottom: 8px;\r\n}\r\n\r\nsection .tip {\r\n  display: inline-block;\r\n  border-radius: 1em;\r\n  font-size: 11px;\r\n  line-height: 12px;\r\n  font-weight: 700;\r\n  background: #e7fdd8;\r\n  color: #66bf3c;\r\n  padding: 4px 12px;\r\n  margin-right: 10px;\r\n  vertical-align: top;\r\n}\r\n\r\nsection .tip-wrapper {\r\n  font-size: 13px;\r\n  line-height: 20px;\r\n  margin-top: 40px;\r\n  margin-bottom: 40px;\r\n}\r\n\r\nsection .tip-wrapper svg {\r\n  display: inline-block;\r\n  height: 12px;\r\n  width: 12px;\r\n  margin-right: 4px;\r\n  vertical-align: top;\r\n  margin-top: 3px;\r\n}\r\n\r\nsection .tip-wrapper svg path {\r\n  fill: #1ea7fd;\r\n}\r\n",
                     "styleUrl": "./page.css"
                 }
             ],
@@ -1130,7 +1226,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".row{\r\n    display: flex;\r\n    padding: 0.5rem 0.5rem;\r\n    flex-direction: row;\r\n    gap:0.5rem;\r\n    flex-wrap: wrap;\r\n}\r\n",
+                    "data": ":host{\r\n    width: 100%;\r\n    display: flex;\r\n    padding: 0.5rem 0.5rem;\r\n    flex-direction: row;\r\n    gap:0.5rem;\r\n    flex-wrap: wrap;\r\n}\r\n",
                     "styleUrl": "./row.component.css"
                 }
             ],
@@ -1146,19 +1242,203 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"row\">\r\n    <ng-content></ng-content>\r\n</div>"
+            "templateData": "<ng-content></ng-content>\r\n"
+        },
+        {
+            "name": "SliderComponent",
+            "id": "component-SliderComponent-a13098a4ebfb4c22488c385029a3a4c92cacc14b77c66222ddcb74e565e2471f6cf0255b2b24cace3bd67a235c5905d4a84c2b63146d04052bf51236ff6c0bfe",
+            "file": "projects/neumorphy-ui/src/lib/slider/slider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-slider",
+            "styleUrls": [
+                "./slider.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./slider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "rangeId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "sizeElement",
+                    "defaultValue": "\"50% 100%\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "5",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getType",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getValue",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "rangeChangeHandle",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setValue",
+                    "args": [
+                        {
+                            "name": "newV",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "newV",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-slider',\r\n  templateUrl: './slider.component.html',\r\n  styleUrls: ['./slider.component.scss']\r\n})\r\nexport class SliderComponent implements OnInit {\r\n\r\n  @Input() rangeId?:string;\r\n  @Input() label?:string;\r\n  @Input() type?:string;\r\n\r\n  constructor() { }\r\n\r\n  value:number = 5;\r\n  sizeElement:string = \"50% 100%\";\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  rangeChangeHandle(event:any){\r\n    this.setValue(event.srcElement.value);\r\n    this.sizeElement = event.srcElement.value*10 +'% 100%';\r\n  }\r\n\r\n  getValue(){\r\n    return this.value;\r\n  }\r\n  setValue(newV:number){\r\n    this.value = newV;\r\n  }\r\n\r\n  getType(){\r\n    return this.type;\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host{\r\n    width: 100%;\r\n\r\n    .slider {\r\n        \r\n        input[type=\"range\"]{\r\n            position: relative;\r\n            z-index: 1;\r\n            width: 100%;\r\n            -webkit-appearance: none;\r\n            height: 0.3rem;\r\n            background: #201E1D;\r\n            // border-radius: 1rem;\r\n            background-image: linear-gradient(100deg, rgba(250,164,73,1) 0%, rgba(246,204,110,1) 50%, rgba(250,164,73,1) 100%);\r\n            background-repeat: no-repeat;\r\n\r\n            &::after{\r\n                position: absolute;\r\n                z-index: -1;\r\n                top: -2.1px;\r\n                left: -2px;\r\n                display: inline-block;\r\n                content: \"\";\r\n                width: 101%;\r\n                height: 0.4rem;\r\n                border: 0.09rem solid #413B3A;\r\n                border-radius: 1rem;\r\n            }\r\n\r\n            &::-webkit-slider-runnable-track{\r\n                -webkit-appearance: none;\r\n                box-shadow: none;\r\n                border: none;\r\n                background: transparent;\r\n            }\r\n\r\n            &::-webkit-slider-thumb{\r\n                z-index: 1;\r\n                -webkit-appearance : none;\r\n                height: 1.2rem;\r\n                width: 1.2rem;                                            /* largeur du bord */\r\n                border: 0.3rem solid #ECEBE4;\r\n                border-radius: 50%;\r\n                background: linear-gradient(160deg, rgba(32,30,29,1) 35%, rgba(108,99,96,1) 100%);\r\n                box-shadow:\r\n                    0px 1px 15px 3px #faa44933,\r\n                    0px 1px 15px 3px #f6cc6e33;\r\n            }\r\n        }\r\n\r\n        label{\r\n            text-transform: capitalize;\r\n            font-size: small;\r\n            color: #ECEBE4;\r\n        }\r\n    }\r\n    // &.curve-right{\r\n    //     width: 30%;\r\n    //     margin: 2rem 0rem;\r\n    //     .slider {\r\n\r\n    //         input[type=\"range\"]{\r\n            \r\n    //             clip-path: ellipse(5rem 5rem at 0 10% 20%)\r\n    //         }\r\n            \r\n    //         label{\r\n    //             display: none;\r\n    //         }\r\n    //     }\r\n    // }\r\n}\r\n",
+                    "styleUrl": "./slider.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"slider\">\r\n    <label for=\"{{rangeId}}\">{{label}}</label>\r\n    <input \r\n        type=\"range\" \r\n        id=\"{{rangeId}}\" \r\n        [value]=\"value\" \r\n        min=\"0\" \r\n        max=\"10\" \r\n        (input)=\"rangeChangeHandle($event)\" \r\n        [style.background-size]=\"sizeElement\"\r\n    >\r\n</div>"
         }
     ],
     "modules": [
         {
             "name": "NeumorphyUIModule",
-            "id": "module-NeumorphyUIModule-4e95f00cda17639ac8efb3f7d7a1db2db955aed26bbc39492a3f85c75b698bee05d1ee97ec52f430717a07f5985a96ce450571d52d168cb6554acde9b310f283",
+            "id": "module-NeumorphyUIModule-fb13dcac82a73803270e8563d1a6983828ea139a30e411010a80ed1d2c8f2c4ceb48a52a98d607d4dc6dc803b0d333b3fd2ede6b5825bfb53fc1bc731e3dfb1a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { NeumorphyUIComponent } from './neumorphy-ui.component';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ButtonComponent } from './button/button.component';\r\nimport { MainComponent } from './main/main.component';\r\nimport { RowComponent } from './row/row.component';\r\nimport { MenuComponent } from './menu/menu.component';\r\nimport {CommonModule} from \"@angular/common\";\r\nimport { InputComponent } from './input/input.component';\r\nimport { CheckboxComponent } from './checkbox/checkbox.component';\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n];\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n  ],\r\n  exports: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n  ]\r\n})\r\nexport class NeumorphyUIModule {\r\n}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { NeumorphyUIComponent } from './neumorphy-ui.component';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ButtonComponent } from './button/button.component';\r\nimport { MainComponent } from './main/main.component';\r\nimport { RowComponent } from './row/row.component';\r\nimport { MenuComponent } from './menu/menu.component';\r\nimport { SliderComponent } from './slider/slider.component';\r\nimport {CommonModule} from \"@angular/common\";\r\nimport { InputComponent } from './input/input.component';\r\nimport { CheckboxComponent } from './checkbox/checkbox.component';\r\nimport { ListComponent } from './list/list.component';\r\nimport { ListItemComponent } from './list-item/list-item.component';\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n];\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n  ],\r\n  exports: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n  ]\r\n})\r\nexport class NeumorphyUIModule {\r\n}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1177,6 +1457,12 @@
                             "name": "InputComponent"
                         },
                         {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
                             "name": "MainComponent"
                         },
                         {
@@ -1187,6 +1473,9 @@
                         },
                         {
                             "name": "RowComponent"
+                        },
+                        {
+                            "name": "SliderComponent"
                         }
                     ]
                 },
@@ -1207,6 +1496,12 @@
                             "name": "InputComponent"
                         },
                         {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
                             "name": "MainComponent"
                         },
                         {
@@ -1217,6 +1512,9 @@
                         },
                         {
                             "name": "RowComponent"
+                        },
+                        {
+                            "name": "SliderComponent"
                         }
                     ]
                 },
@@ -1237,6 +1535,16 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1251,7 +1559,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n]"
+                "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n]"
             },
             {
                 "name": "context",
@@ -1333,6 +1641,16 @@
                 "type": "literal type"
             },
             {
+                "name": "RowImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1360,7 +1678,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                "defaultValue": "(args: Button) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -1370,7 +1688,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                "defaultValue": "(args: Header) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -1380,7 +1698,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Page>",
-                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                "defaultValue": "(args: Page) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
             },
             {
                 "name": "Template",
@@ -1390,16 +1718,48 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CardComponent>",
-                "defaultValue": "() => ({\r\n  component: CardComponent,\r\n  template: `<app-card></app-card>`,\r\n})"
+                "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n  /*  template: `<nui-card title=\"title\" subtitle=\"subtitle\" description=\"description\" color=\"raisin\" borderRadius=\"10\"\r\n              elevation=\"md\"\r\n              padding=\"md\" sense=\"row\"\r\n              width=\"20em\" align=\"center\"\r\n              [headerImage]=\"img\" imgHeight=\"8em\"></nui-card>`,*/\r\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
+                }
+            ],
             "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts": [
                 {
                     "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RowImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts",
@@ -1416,7 +1776,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
-                    "defaultValue": "() => ({\r\n  component: CardComponent,\r\n  template: `<app-card></app-card>`,\r\n})"
+                    "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n  /*  template: `<nui-card title=\"title\" subtitle=\"subtitle\" description=\"description\" color=\"raisin\" borderRadius=\"10\"\r\n              elevation=\"md\"\r\n              padding=\"md\" sense=\"row\"\r\n              width=\"20em\" align=\"center\"\r\n              [headerImage]=\"img\" imgHeight=\"8em\"></nui-card>`,*/\r\n})"
                 }
             ],
             "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts": [
@@ -1428,7 +1788,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n]"
+                    "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n]"
                 }
             ],
             "projects/neumorphy-ui/src/test.ts": [
@@ -1501,7 +1861,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<Button>",
-                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: Button) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "stories/Header.stories.ts": [
@@ -1533,7 +1893,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<Header>",
-                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: Header) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "stories/Page.stories.ts": [
@@ -1565,7 +1925,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<Page>",
-                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: Page) => ({\r\n  props: args,\r\n})"
                 }
             ]
         },
@@ -1583,8 +1943,28 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
+                "coveragePercent": 11,
+                "coverageCount": "1/9",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1593,7 +1973,7 @@
                 "linktype": "component",
                 "name": "CardComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/27",
+                "coverageCount": "0/28",
                 "status": "low"
             },
             {
@@ -1602,6 +1982,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RowImage",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1635,12 +2025,30 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/neumorphy-ui/src/lib/list-item/list-item.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListItemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/list/list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/neumorphy-ui/src/lib/main/main.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "MainComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1649,7 +2057,7 @@
                 "linktype": "component",
                 "name": "MenuComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -1687,6 +2095,15 @@
                 "name": "RowComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/slider/slider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SliderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
                 "status": "low"
             },
             {

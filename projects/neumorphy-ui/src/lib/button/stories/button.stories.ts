@@ -19,12 +19,13 @@ export default {
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   component: ButtonComponent,
   props: args,
-  /*  template: `<nui-button [label]="'label'" [rounded]="false" [active]="false"></nui-button>`,*/
+  /*  template: `<nui-button [label]="'label'" [size]="'size'" [rounded]="false" [active]="false"></nui-button>`,*/
 });
 
 export const Base = Template.bind({});
 Base.args = {
   label: 'Click me',
+  size: 'sm',
   rounded: false,
   active: false,
 };

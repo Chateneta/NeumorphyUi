@@ -25,12 +25,13 @@ export class ButtonComponent {
   }
 
   isRounded() {
-    return this.rounded ? 'btn-rounded-nui ' : 'btn-rect-nui ';
+    return this.rounded ? 'btn-rounded-nui' : 'btn-rect-nui';
   }
 
   isActive() {
-    return this.active ? 'btn-active-nui ' : 'btn-default-nui ';
+    return this.active ? 'btn-active-nui' : '';
   }
+
 
   getSizeComponent() {
     switch (this.size) {
@@ -49,6 +50,6 @@ export class ButtonComponent {
   }
 
   getBtnClass() {
-    return `${this.isRounded()} ${this.getSizeComponent()}`
+    return `${this.isRounded()} ${this.getSizeComponent()} ${this.isActive()}`
   }
 }

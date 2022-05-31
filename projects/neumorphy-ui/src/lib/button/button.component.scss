@@ -12,6 +12,12 @@
 
   &:active {
     box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
+  }
+
+  &.btn-active-nui {
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
   }
 
   &.btn-rounded-nui {

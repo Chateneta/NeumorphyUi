@@ -1,4 +1,4 @@
-<div class="card" *ngIf="display=='buttons'"
+<div class="card" *ngIf="display === 'buttons'"
      [style.flex-direction]="sense"
      [style.background]="getBackgroundColor()"
      [style.border-radius]="borderRadius+'px'"
@@ -10,8 +10,8 @@
      [style.padding]="getPadding()"
      [style.width]="width">
 
-  <div class="image-header" *ngIf="headerImage" [style.margin-bottom]="sense == 'column'? '1em':0"
-       [style.margin-right]="sense == 'row'? '1em':0">
+  <div class="image-header" *ngIf="headerImage" [style.margin-bottom]="sense === 'column'? '1em' : 0"
+       [style.margin-right]="sense == 'row' ? '1em' : 0">
     <img [src]="headerImage"
          [style.border-radius]="borderRadius+'px'"
          [style.height]="imgHeight"

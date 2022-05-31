@@ -1,5 +1,14 @@
 import {Component, Input} from '@angular/core';
 
+/**
+ * Composant permettant de créer des boutons personnalisés
+ *
+ * ## Usage
+ *
+ * ```ts
+ * <nui-button [label]="'label'" [size]="'sm'" [rounded]="false" [active]="false"></nui-button>
+ * ```
+ */
 @Component({
   selector: 'nui-button',
   templateUrl: './button.component.html',

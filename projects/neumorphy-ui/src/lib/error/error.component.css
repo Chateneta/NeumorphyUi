@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  background: #262322;
+  box-shadow: inset 20px 20px 60px #201e1d,
+  inset -20px -20px 60px #2c2827;
+  padding: 16px 24px;
+  align-items: center;
+  font-family: Mukta, sans-serif;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.button {
+  background: none;
+  border: none;
+}
+
+.txt {
+  margin-right: 5em;
+}

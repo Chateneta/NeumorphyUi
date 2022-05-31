@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 /**
  * Composant permettant de créer des boutons personnalisés
@@ -20,8 +20,14 @@ export class ButtonComponent {
   @Input() size = 'sm';
   @Input() rounded = false;
   @Input() active = false;
+  @Output() clic = new EventEmitter();
 
   constructor() {
+  }
+
+  onClick() {
+    this.clic.emit();
+    console.log('CLICK');
   }
 
   isRounded() {

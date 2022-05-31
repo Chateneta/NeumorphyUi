@@ -1,6 +1,6 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
-import {CheckboxComponent} from "../../projects/neumorphy-ui/src/lib/checkbox/checkbox.component";
+import {CheckboxComponent} from "./checkbox.component";
 
 // More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {

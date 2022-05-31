@@ -30,11 +30,11 @@
         <p style="margin: 0.3em 0em;">{{item}}</p>
       </div>
     </div>
-    <div class="buttons" *ngIf="button1 || button2">
+    <div class="buttons" *ngIf="button1 || button2" [style.justify-content]="justify">
       <nui-button [active]="button1.active" [size]="button1.size" [label]="button1.label"
-                  style="margin-right: 1em"></nui-button>
+                  style="margin-right: 1em" (clic)="button1.action()"></nui-button>
       <nui-button [active]="button2.active" [size]="button2.size" [label]="button2.label"
-                  style="margin-right: 1em"></nui-button>
+                  style="margin-right: 1em" (clic)="button1.action()"></nui-button>
     </div>
   </div>
 </div>
@@ -62,6 +62,7 @@
     <div class="subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
   </div>
   <div *ngIf="buttonItem" style="position: absolute;right: 1em">
-    <nui-button [rounded]="true" [active]="buttonItem.active" size="sm" [label]="buttonItem.label"></nui-button>
+    <nui-button [rounded]="true" [active]="buttonItem.active" size="sm" [label]="buttonItem.label"
+                (clic)="button1.action()"></nui-button>
   </div>
 </div>

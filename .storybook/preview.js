@@ -4,6 +4,19 @@ setCompodocJson(docJson);
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  backgrounds: {
+    default: 'dark',
+    values: [
+      {
+        name: 'dark',
+        value: '#262322',
+      },
+      {
+        name: 'light',
+        value: '#f8f8f8',
+      },
+    ],
+  },
   controls: {
     matchers: {
       color: /(background|color)$/i,

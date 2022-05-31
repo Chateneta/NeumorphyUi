@@ -78,17 +78,19 @@ export class CardComponent implements OnInit {
         col = ['#d1d1d1', '#ffffff']
         break;
     }
+
+    const defaultBoxShadow = `10px 10px 20px ${col[0]}, -10px -10px 20px ${col[1]}`;
     switch (this.elevation) {
       case 'sm':
-        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]
+        return defaultBoxShadow
       case 'md':
-        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]
+        return `15px 15px 30px ${col[0]}, -15px -15px 30px ${col[1]}`
       case 'lg':
-        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]
+        return `24px 24px 48px ${col[0]}, -24px 24px 48px ${col[1]}`
       case 'xl':
-        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]
+        return `32px 32px 64px ${col[0]}, -32px -32px 64px ${col[1]}`
       default:
-        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]
+        return defaultBoxShadow
     }
   }
 

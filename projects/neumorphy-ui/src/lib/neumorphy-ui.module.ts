@@ -11,6 +11,7 @@ import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { TextComponent } from './text/text.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -23,6 +24,7 @@ const COMPONENTS = [
   CheckboxComponent,
   ListComponent,
   ListItemComponent,
+  TextComponent,
 ];
 
 @NgModule({
@@ -33,10 +35,10 @@ const COMPONENTS = [
   imports: [
     CommonModule,
   ],
-  exports: [
-    ...COMPONENTS,
-    NeumorphyUIComponent,
-  ]
+    exports: [
+        ...COMPONENTS,
+        NeumorphyUIComponent,
+    ]
 })
 export class NeumorphyUIModule {
 }

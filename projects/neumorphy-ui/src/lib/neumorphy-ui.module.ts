@@ -10,12 +10,14 @@ import {CommonModule} from "@angular/common";
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { CarouselComponent } from './carousel/carousel.component';
+// @ts-ignore
 import { NgxSplideModule } from 'ngx-splide';
 
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { TextComponent } from './text/text.component';
 import { TitleComponent } from './title/title.component';
+import { RadiosComponent } from './radios/radios.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -26,6 +28,7 @@ const COMPONENTS = [
   SliderComponent,
   InputComponent,
   CheckboxComponent,
+  RadiosComponent,
   CarouselComponent,
   ListComponent,
   ListItemComponent,

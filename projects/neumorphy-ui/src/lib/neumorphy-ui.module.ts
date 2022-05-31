@@ -6,11 +6,12 @@ import { MainComponent } from './main/main.component';
 import { RowComponent } from './row/row.component';
 import { MenuComponent } from './menu/menu.component';
 import { SliderComponent } from './slider/slider.component';
-import {CommonModule} from "@angular/common";
+import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { FlexDivComponent } from './flex-div/flex-div.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -23,20 +24,12 @@ const COMPONENTS = [
   CheckboxComponent,
   ListComponent,
   ListItemComponent,
+  FlexDivComponent,
 ];
 
 @NgModule({
-  declarations: [
-    ...COMPONENTS,
-    NeumorphyUIComponent,
-  ],
-  imports: [
-    CommonModule,
-  ],
-  exports: [
-    ...COMPONENTS,
-    NeumorphyUIComponent,
-  ]
+  declarations: [...COMPONENTS, NeumorphyUIComponent],
+  imports: [CommonModule],
+  exports: [...COMPONENTS, NeumorphyUIComponent],
 })
-export class NeumorphyUIModule {
-}
+export class NeumorphyUIModule {}

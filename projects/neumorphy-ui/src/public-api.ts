@@ -10,8 +10,9 @@ export * from './lib/button/button.component';
 export * from './lib/main/main.component';
 export * from './lib/row/row.component';
 export * from './lib/menu/menu.component';
-export * from './lib/slider/slider.component'
+export * from './lib/slider/slider.component';
 export * from './lib/input/input.component';
 export * from './lib/checkbox/checkbox.component';
 export * from './lib/list/list.component';
 export * from './lib/list-item/list-item.component';
+export * from './lib/flex-div/flex-div.component';

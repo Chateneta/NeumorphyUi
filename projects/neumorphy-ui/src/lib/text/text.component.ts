@@ -18,7 +18,7 @@ export class TextComponent implements OnInit {
   }
 
   isItalic() {
-    return this.bold ? 'text-italic-nui' : '';
+    return this.italic ? 'text-italic-nui' : '';
   }
 
   getClasses() {

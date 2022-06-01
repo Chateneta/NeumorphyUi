@@ -13,6 +13,7 @@ export * from './lib/menu/menu.component';
 export * from './lib/slider/slider.component'
 export * from './lib/input/input.component';
 export * from './lib/checkbox/checkbox.component';
+export * from './lib/carousel/carousel.component';
 export * from './lib/list/list.component';
 export * from './lib/title/title.component';
 export * from './lib/list-item/list-item.component';

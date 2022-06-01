@@ -1,0 +1,5 @@
+<splide [options]="{ type: 'slide', keyboard: false, autoheight:true}">
+    <splide-slide *ngFor="let image of images">
+        <img [src]="image.src" alt="" />
+    </splide-slide>
+</splide>

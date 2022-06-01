@@ -1,4 +1,5 @@
 @import "../../../scss/variables";
+@import '../../../scss/styles';
 
 .checkboxList {
   display: flex;
@@ -11,17 +12,39 @@
   &__checkbox + label {
     display: flex;
     justify-content: center;
-
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    background: $bg-color;
-    box-shadow: $bs-first-elevation $bs-first-color, $bs-second-elevation $bs-second-color;
-
+    overflow: visible;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(218,135,50);
+    background: linear-gradient(90deg, #da8732 0%, #f0bc5d 46%, #fcedb9 100%);
+    box-shadow: 0 0 24px #f0bc5d;
     cursor: pointer;
     > i {
       font-size: 2rem;
       color: rgba(#6a9bd8, 0.8);
+    }
+    &:after {
+      content: "";
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: block;
+      background-color: #2f261b;
+      z-index: -1;
+      position: absolute;
+      margin-top: -7px;
+    }
+    &:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: block;
+      background-color: $black;
+      z-index: -1;
+      position: absolute;
+      margin-top: 50px;
     }
   }
   &__checkbox:checked + label {

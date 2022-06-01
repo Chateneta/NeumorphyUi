@@ -6,7 +6,7 @@ import { MainComponent } from './main/main.component';
 import { RowComponent } from './row/row.component';
 import { MenuComponent } from './menu/menu.component';
 import { SliderComponent } from './slider/slider.component';
-import {CommonModule} from "@angular/common";
+import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -14,6 +14,7 @@ import { NgxSplideModule } from 'ngx-splide';
 
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { FlexDivComponent } from './flex-div/flex-div.component';
 import { TextComponent } from './text/text.component';
 import { TitleComponent } from './title/title.component';
 
@@ -31,22 +32,12 @@ const COMPONENTS = [
   ListItemComponent,
   TextComponent,
   TitleComponent,
+  FlexDivComponent,
 ];
 
 @NgModule({
-  declarations: [
-    ...COMPONENTS,
-    NeumorphyUIComponent,
-  ],
-  imports: [
-    CommonModule,
-    NgxSplideModule
-  ],
-  exports: [
-    ...COMPONENTS,
-    NeumorphyUIComponent,
-    NgxSplideModule
-  ]
+  declarations: [...COMPONENTS, NeumorphyUIComponent],
+  imports: [CommonModule, NgxSplideModule],
+  exports: [...COMPONENTS, NeumorphyUIComponent, NgxSplideModule],
 })
-export class NeumorphyUIModule {
-}
+export class NeumorphyUIModule {}

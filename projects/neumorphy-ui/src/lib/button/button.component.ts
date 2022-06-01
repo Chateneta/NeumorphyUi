@@ -1,5 +1,14 @@
 import {Component, Input} from '@angular/core';
 
+/**
+ * Composant permettant de créer des boutons personnalisés
+ *
+ * ## Usage
+ *
+ * ```ts
+ * <nui-button [label]="'label'" [size]="'sm'" [rounded]="false" [active]="false"></nui-button>
+ * ```
+ */
 @Component({
   selector: 'nui-button',
   templateUrl: './button.component.html',
@@ -16,18 +25,13 @@ export class ButtonComponent {
   }
 
   isRounded() {
-    if (this.rounded) {
-      return 'btn-rounded-nui '
-    }
-    return 'btn-rect-nui '
+    return this.rounded ? 'btn-rounded-nui' : 'btn-rect-nui';
   }
 
   isActive() {
-    if (this.active) {
-      return 'btn-active-nui '
-    }
-    return 'btn-default-nui '
+    return this.active ? 'btn-active-nui' : '';
   }
+
 
   getSizeComponent() {
     switch (this.size) {
@@ -45,5 +49,7 @@ export class ButtonComponent {
     }
   }
 
-
+  getBtnClass() {
+    return `${this.isRounded()} ${this.getSizeComponent()} ${this.isActive()}`
+  }
 }

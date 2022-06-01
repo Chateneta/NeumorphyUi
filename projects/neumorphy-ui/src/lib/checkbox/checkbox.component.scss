@@ -1,23 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
-
-* , *::after, *::before {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: 'Roboto Condensed', sans-serif;
-
-  background-color: #ebf5fc;
-  color: #6a9bd8;
-}
+@import "../../../scss/variables";
 
 .checkboxList {
   display: flex;
@@ -34,9 +15,8 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    background: #262322;
-    box-shadow:  8px 8px 24px #1b1918,
-    -8px -8px 24px #312d2c;
+    background: $bg-color;
+    box-shadow: $bs-first-elevation $bs-first-color, $bs-second-elevation $bs-second-color;
 
     cursor: pointer;
     > i {
@@ -45,8 +25,7 @@ body {
     }
   }
   &__checkbox:checked + label {
-    box-shadow: inset 8px 8px 24px #1b1918,
-    inset -8px -8px 24px #312d2c;
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
 
     > i {
       font-size: 1.8rem;

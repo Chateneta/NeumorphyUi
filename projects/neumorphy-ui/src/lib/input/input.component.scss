@@ -1,3 +1,5 @@
+@import "../../../scss/variables";
+
 .input-nui {
   width: 20.4rem;
   height: 4rem;
@@ -11,7 +13,7 @@
 
   &:focus {
     outline: none;
-    background: #262322;
+    background: $bg-color;
     box-shadow:  -5px -5px 10px #23201f,
     5px 5px 10px #292625;
   }

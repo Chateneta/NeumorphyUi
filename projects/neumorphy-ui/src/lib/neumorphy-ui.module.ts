@@ -9,9 +9,14 @@ import { SliderComponent } from './slider/slider.component';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgxSplideModule } from 'ngx-splide';
+
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { FlexDivComponent } from './flex-div/flex-div.component';
+import { TextComponent } from './text/text.component';
+import { TitleComponent } from './title/title.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -22,14 +27,17 @@ const COMPONENTS = [
   SliderComponent,
   InputComponent,
   CheckboxComponent,
+  CarouselComponent,
   ListComponent,
   ListItemComponent,
+  TextComponent,
+  TitleComponent,
   FlexDivComponent,
 ];
 
 @NgModule({
   declarations: [...COMPONENTS, NeumorphyUIComponent],
-  imports: [CommonModule],
-  exports: [...COMPONENTS, NeumorphyUIComponent],
+  imports: [CommonModule, NgxSplideModule],
+  exports: [...COMPONENTS, NeumorphyUIComponent, NgxSplideModule],
 })
 export class NeumorphyUIModule {}

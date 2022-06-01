@@ -2,7 +2,6 @@ import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from '@storybook/angular/types-6-0';
 import {CardComponent} from '../card.component';
-import Button from "../../../../../../stories/button.component";
 
 export default {
   title: 'Components/Card',

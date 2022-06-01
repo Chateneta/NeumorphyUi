@@ -1,16 +1,23 @@
+@import "../../../scss/variables";
+
 :host button{
-  background: #262322;
+  background: $bg-color;
   border: none;
   font-size: 1rem;
   color: #ecebe4;
-  box-shadow: 8px 8px 24px #1b1918,
-  -8px -8px 24px #312d2c;
+  box-shadow: $bs-first-elevation $bs-first-color, $bs-second-elevation $bs-second-color;
   min-width: 5rem;
   max-width: 10rem;
   height: 2.5rem;
+
   &:active {
-    box-shadow: inset 8px 8px 24px #1b1918,
-    inset -8px -8px 24px #312d2c;
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
+  }
+
+  &.btn-active-nui {
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
   }
 
   &.btn-rounded-nui {

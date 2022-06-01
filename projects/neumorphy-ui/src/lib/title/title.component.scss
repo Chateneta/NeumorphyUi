@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');
+
+:host {
+  h1 {
+    font-family: Mukta, sans-serif;
+
+    &.text-bold-nui {
+      font-weight: bold;
+    }
+
+    &.text-italic-nui {
+      font-style: italic;
+    }
+  }
+}

@@ -27,7 +27,6 @@ export class ButtonComponent {
 
   onClick() {
     this.clic.emit();
-    console.log('CLICK');
   }
 
   isRounded() {

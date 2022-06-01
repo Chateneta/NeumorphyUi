@@ -1,16 +1,22 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
+import {IButton} from "../button/IButton.interface";
 
 @Component({
   selector: 'nui-error',
   templateUrl: './error.component.html',
-  styleUrls: ['./error.component.css']
+  styleUrls: ['./error.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ErrorComponent implements OnInit {
 
+  @Input() display: 'modal' | 'block' = 'modal';
   @Input() txt = '';
-  @Input() type : 'success' | 'warning' | 'info' | 'error' = 'error';
+  @Input() type: 'success' | 'warning' | 'info' | 'error' = 'error';
+  @Input() button1!: IButton;
+  @Input() button2!: IButton;
+  @Output() close = new EventEmitter();
 
-  getColor(){
+  getColor() {
     switch (this.type) {
       case 'success':
         return '#0ca900'
@@ -25,10 +31,12 @@ export class ErrorComponent implements OnInit {
     }
   }
 
-  dismiss(){
+  dismiss() {
+    this.close.emit();
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

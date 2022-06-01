@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {IButton} from "../button/IButton.interface";
 
 @Component({
   selector: 'nui-card',
@@ -10,24 +11,24 @@ export class CardComponent implements OnInit {
   @Input() title = '';
   @Input() subtitle = '';
   @Input() description = '';
-  @Input() button1: any;//Button
-  @Input() button2: any; //Button
-  @Input() buttonItem: any; //Button
+  @Input() button1!: IButton;//Button
+  @Input() button2!: IButton; //Button
+  @Input() buttonItem!: IButton; //Button
   @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';
   @Input() borderRadius = '12'; //Choisir le border radius
   @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';
   @Input() display: 'buttons' | 'image' | 'item' = 'buttons';
   @Input() headerImage = '';
   @Input() imgSrc = '';
-  @Input() justify: 'left' | 'right' | 'center' = 'left';
-  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';
+  @Input() justify: 'left' | 'right' | 'center' = 'center';
+  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'center';
   @Input() textAlign: 'center' | 'start' | 'end' = 'center';
   @Input() itemImage = '';
   @Input() width = '';
   @Input() sense = 'column';
   @Input() imgHeight = '';
   @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
-  @Input() items: any;
+  @Input() items: string[] | undefined;
 
   @Output() action = new EventEmitter();
 

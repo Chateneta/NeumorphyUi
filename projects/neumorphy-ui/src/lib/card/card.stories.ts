@@ -1,14 +1,16 @@
 import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from '@storybook/angular/types-6-0';
-import {CardComponent} from '../card.component';
+import {CardComponent} from "./card.component";
+import {ButtonComponent} from "../button/button.component";
 
 export default {
   title: 'Components/Card',
   component: CardComponent,
+  subcomponents: {ButtonComponent},
   decorators: [
     moduleMetadata({
-      declarations: [CardComponent],
+      declarations: [CardComponent,ButtonComponent],
       imports: [CommonModule],
     }),
   ],
@@ -27,20 +29,20 @@ const Template: Story<CardComponent> = (args: CardComponent) => ({
 const items = ['Item 1', 'Item 2'];
 const img = "https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg";
 const button1 = {
-  'label': 'Bouton 1',
-  'active': true,
-  'size': 'sm',
-  'ev' : test
+  label: 'Bouton 1',
+  active: true,
+  size: 'sm',
+  action: function () {
+    alert('test');
+  }
 };
 const button2 = {
   label: 'Bouton 2',
-  active: true,
+  active: false,
   size: 'sm',
-  ev : test
-}
-
-function test() {
-  alert('test');
+  action: function () {
+    alert('test');
+  }
 }
 
 export const Base = Template.bind({});
@@ -91,20 +93,22 @@ Item.args = {
   elevation: 'md',
   padding: 'sm',
   sense: 'row',
-  width: '20em',
+  width: '25em',
   align: 'center',
   itemImage: img,
   buttonItem: {
     label: '+',
     active: true,
     size: 'sm',
-    ev: test
+    action: function () {
+      alert('added');
+    }
   }
 };
 
 export const ColImage = Template.bind({});
 ColImage.args = {
-  display:'buttons',
+  display: 'buttons',
   title: 'Titre',
   subtitle: 'Sous-Titre',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',

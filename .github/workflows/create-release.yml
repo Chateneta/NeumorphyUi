@@ -8,11 +8,13 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
-      - name: release-please-action
-        uses: google-github-actions/release-please-action@v3.1.1
+      - name: install angular cli & build
         run: |
           npm install -g @angular/cli
           npm run build
+          
+      - name: release-please-action
+        uses: google-github-actions/release-please-action@v3.1.1
         with:
           path: dist/neumorphy-ui
           token: ${{ secrets.TOKEN_GITHUB }}

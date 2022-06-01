@@ -9,6 +9,9 @@ import { SliderComponent } from './slider/slider.component';
 import {CommonModule} from "@angular/common";
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgxSplideModule } from 'ngx-splide';
+
 
 const COMPONENTS = [
   CardComponent,
@@ -19,6 +22,7 @@ const COMPONENTS = [
   SliderComponent,
   InputComponent,
   CheckboxComponent,
+  CarouselComponent,
 ];
 
 @NgModule({
@@ -28,10 +32,12 @@ const COMPONENTS = [
   ],
   imports: [
     CommonModule,
+    NgxSplideModule
   ],
   exports: [
     ...COMPONENTS,
     NeumorphyUIComponent,
+    NgxSplideModule
   ]
 })
 export class NeumorphyUIModule {

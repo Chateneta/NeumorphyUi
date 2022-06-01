@@ -10,8 +10,11 @@ jobs:
     steps:
       - name: release-please-action
         uses: google-github-actions/release-please-action@v3.1.1
+        run: |
+          npm install -g @angular/cli
+          npm run build
         with:
-          path: projects/neumorphy-ui
+          path: dist/neumorphy-ui
           token: ${{ secrets.TOKEN_GITHUB }}
           release-type: node
           default-branch: main

@@ -1,7 +1,7 @@
 import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from '@storybook/angular/types-6-0';
-import {InputComponent} from '../input.component';
+import {InputComponent} from "./input.component";
 
 export default {
   title: 'Components/Input',
@@ -13,10 +13,14 @@ export default {
     }),
   ],
 };
-// This creates a Story for the component
+
 const Template: Story<InputComponent> = (args: InputComponent) => ({
+  component: InputComponent,
   props: args,
 });
 
 export const Base = Template.bind({});
-// Other stories could be added here as well, all you have to do is export them along!
+Base.args = {
+  size: 'sm',
+  placeholder: 'Rentre une valeur...',
+}

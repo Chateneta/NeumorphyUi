@@ -1,7 +1,0 @@
-:host{
-    display: flex;
-    padding: 0rem 2rem;
-    flex-wrap: wrap;
-    background: radial-gradient(circle at center top, rgba(60,56,55,1) 0%, rgba(46,43,42,1) 30%, rgba(33,31,30,1) 80%);
-    color: #ECEBE4;
-}

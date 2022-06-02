@@ -20,6 +20,7 @@ export * from './lib/list/list.component';
 export * from './lib/title/title.component';
 export * from './lib/list-item/list-item.component';
 export * from './lib/text/text.component';
+export * from './lib/radios/radios.component';
 
 export * from './lib/button/IButton.interface';
 export * from './lib/card/ICard.interface';
@@ -33,3 +34,4 @@ export * from './lib/radios/IRadios.interface';
 export * from './lib/slider/ISlider.interface';
 export * from './lib/text/IText.interface';
 export * from './lib/title/ITitle.interface';
+export * from './lib/carousel/image-interface';

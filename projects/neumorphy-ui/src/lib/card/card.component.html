@@ -11,11 +11,11 @@
      [style.width]="width">
 
   <div class="image-header" *ngIf="headerImage" [style.margin-bottom]="sense === 'column'? '1em' : 0"
-       [style.margin-right]="sense == 'row' ? '1em' : 0">
+       [style.margin-right]="sense === 'row' ? '1em' : 0">
     <img [src]="headerImage"
          [style.border-radius]="borderRadius+'px'"
          [style.height]="imgHeight"
-         style="box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;"
+         style="box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;"
          alt="image">
   </div>
   <div class="content"
@@ -27,7 +27,7 @@
     <div class="items" *ngIf="items">
       <div *ngFor="let item of items" style="display: flex;flex-direction: column">
         <hr>
-        <p style="margin: 0.3em 0em;">{{item}}</p>
+        <p style="margin: 0.3em 0">{{item}}</p>
       </div>
     </div>
     <div class="buttons" *ngIf="button1 || button2" style="justify-content:center">
@@ -39,13 +39,13 @@
   </div>
 </div>
 
-<div class="card" *ngIf="display=='image'"
+<div *ngIf="display==='image'" class="card"
      [style.width]="width">
   <img [src]="imgSrc"
        alt="image" class="image">
 </div>
 
-<div class="card" *ngIf="display=='item'"
+<div *ngIf="display==='item'" class="card"
      [style.flex-direction]="sense"
      [style.background]="getBackgroundColor()"
      [style.border-radius]="borderRadius+'px'"

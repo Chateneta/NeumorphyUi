@@ -11,18 +11,27 @@
   font-weight: bold;
   justify-content: space-between;
   border-radius: 10px;
-
   z-index: 5;
 }
 
-.modal{
+.modal {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: max-content;
+  max-width: 90%;
+  height: max-content;
+}
+
+.modal-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  width: 90%;
   height: max-content;
 }
 
@@ -32,6 +41,3 @@
   cursor: pointer;
 }
 
-.txt {
-  margin-right: 5em;
-}

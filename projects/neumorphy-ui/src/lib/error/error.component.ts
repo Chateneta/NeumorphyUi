@@ -9,7 +9,7 @@ import {IButton} from "../button/IButton.interface";
 })
 export class ErrorComponent implements OnInit {
 
-  @Input() display: 'modal' | 'block' = 'modal';
+  @Input() display: 'modal' | 'block' | 'modal-bottom' = 'modal';
   @Input() txt = '';
   @Input() type: 'success' | 'warning' | 'info' | 'error' = 'error';
   @Input() button1!: IButton;

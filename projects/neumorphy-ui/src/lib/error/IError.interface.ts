@@ -1,6 +1,6 @@
 import {IButton} from "../button/IButton.interface";
 
-export interface Icard {
+export interface IError {
   display?: string;
   txt: string;
   type?: string;

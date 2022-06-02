@@ -1,2 +1,2 @@
-export interface Icard {
+export interface ICheckbox {
 }

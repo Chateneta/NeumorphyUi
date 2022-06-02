@@ -18,3 +18,5 @@ export * from './lib/list/list.component';
 export * from './lib/title/title.component';
 export * from './lib/list-item/list-item.component';
 export * from './lib/text/text.component';
+
+export * from './lib/radios/radios.component';

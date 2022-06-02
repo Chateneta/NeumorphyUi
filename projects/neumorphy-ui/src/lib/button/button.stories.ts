@@ -1,7 +1,7 @@
 import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from "@storybook/angular/types-6-0";
-import {ButtonComponent} from '../button.component';
+import {ButtonComponent} from './button.component';
 
 
 export default {

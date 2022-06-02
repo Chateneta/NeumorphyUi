@@ -1,0 +1,37 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  background: #262322;
+  box-shadow: inset 20px 20px 60px #201e1d,
+  inset -20px -20px 60px #2c2827;
+  padding: 16px 24px;
+  align-items: center;
+  font-family: Mukta, sans-serif;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  border-radius: 10px;
+
+  z-index: 5;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+}
+
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.txt {
+  margin-right: 5em;
+}

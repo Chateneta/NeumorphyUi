@@ -9,6 +9,7 @@ import { SliderComponent } from './slider/slider.component';
 import {CommonModule} from "@angular/common";
 import { InputComponent } from './input/input.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ErrorComponent } from './error/error.component';
 import { CarouselComponent } from './carousel/carousel.component';
 // @ts-ignore
 import { NgxSplideModule } from 'ngx-splide';
@@ -28,6 +29,7 @@ const COMPONENTS = [
   SliderComponent,
   InputComponent,
   CheckboxComponent,
+  ErrorComponent,
   RadiosComponent,
   CarouselComponent,
   ListComponent,
@@ -40,6 +42,7 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS,
     NeumorphyUIComponent,
+    ErrorComponent,
   ],
   imports: [
     CommonModule,

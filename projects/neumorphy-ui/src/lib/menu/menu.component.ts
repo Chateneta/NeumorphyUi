@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'nui-menu',
@@ -10,7 +10,8 @@ export class MenuComponent implements OnInit {
   @Input() mode?: string;
   @Input() verticalCenter: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

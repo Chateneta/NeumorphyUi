@@ -1,25 +1,24 @@
-import { NgModule } from '@angular/core';
-import { NeumorphyUIComponent } from './neumorphy-ui.component';
-import { CardComponent } from './card/card.component';
-import { ButtonComponent } from './button/button.component';
-import { MainComponent } from './main/main.component';
-import { RowComponent } from './row/row.component';
-import { MenuComponent } from './menu/menu.component';
-import { SliderComponent } from './slider/slider.component';
+import {NgModule} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import { InputComponent } from './input/input.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { ErrorComponent } from './error/error.component';
-import { CarouselComponent } from './carousel/carousel.component';
 // @ts-ignore
-import { NgxSplideModule } from 'ngx-splide';
-
-import { ListComponent } from './list/list.component';
-import { ListItemComponent } from './list-item/list-item.component';
-import { TextComponent } from './text/text.component';
-import { TitleComponent } from './title/title.component';
-import { RadiosComponent } from './radios/radios.component';
-import { IconButtonComponent } from './icon-button/icon-button.component';
+import {NgxSplideModule} from 'ngx-splide';
+import {NeumorphyUIComponent} from './neumorphy-ui.component';
+import {CardComponent} from './card/card.component';
+import {ButtonComponent} from './button/button.component';
+import {MainComponent} from './main/main.component';
+import {RowComponent} from './row/row.component';
+import {MenuComponent} from './menu/menu.component';
+import {SliderComponent} from './slider/slider.component';
+import {InputComponent} from './input/input.component';
+import {CheckboxComponent} from './checkbox/checkbox.component';
+import {ErrorComponent} from './error/error.component';
+import {CarouselComponent} from './carousel/carousel.component';
+import {ListComponent} from './list/list.component';
+import {ListItemComponent} from './list-item/list-item.component';
+import {TextComponent} from './text/text.component';
+import {TitleComponent} from './title/title.component';
+import {RadiosComponent} from './radios/radios.component';
+import {IconButtonComponent} from './icon-button/icon-button.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -44,7 +43,6 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS,
     NeumorphyUIComponent,
-    ErrorComponent,
   ],
   imports: [
     CommonModule,

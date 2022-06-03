@@ -1,37 +1,405 @@
-// Color
-$primary: blue;
-$bg-color: #262322;
-$orangeyellow: #F6CC6E;
-$raisin-black: #262322;
-$alabasterbackground: #ECEBE4;
-$rajah: #FAA449;
+@import "./functions";
 
-// Box Shadow
-$bs-first-color: #1b1918;
-$bs-first-elevation: 8px 8px 24px;
+/**
+ ***** Colors *****
+ */
 
-$bs-second-color: #312d2c;
-$bs-second-elevation: -8px -8px 24px;
+$gray-50: #F9FAFB;
+$gray-100: #F3F4F6;
+$gray-200: #E5E7EB;
+$gray-300: #D1D5DB;
+$gray-400: #9CA3AF;
+$gray-500: #6B7280;
+$gray-600: #4B5563;
+$gray-700: #374151;
+$gray-800: #1F2937;
+$gray-900: #111827;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+    (
+      "100": $gray-100,
+      "200": $gray-200,
+      "300": $gray-300,
+      "400": $gray-400,
+      "500": $gray-500,
+      "600": $gray-600,
+      "700": $gray-700,
+      "800": $gray-800,
+      "900": $gray-900
+    ),
+    $grays
+);
+
 
 $black: #262322;
 $yellow: #F6CC6E;
 $white: #ECEBE4;
 $orange: #FAA449;
-
 $red: #F25D54;
 $red-light: #f47771;
 $green: #5CC689;
 $green-light: #7bd19f;
 $overlay: #04293A;
 $neutral: #EAEAEA;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 
-$gray-50 : #F9FAFB;
-$gray-100 : #F3F4F6;
-$gray-200 : #E5E7EB;
-$gray-300 : #D1D5DB;
-$gray-400 : #9CA3AF;
-$gray-500 : #6B7280;
-$gray-600 : #4B5563;
-$gray-700 : #374151;
-$gray-800 : #1F2937;
-$gray-900 : #111827;
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+    (
+      "blue": $blue,
+      "indigo": $indigo,
+      "purple": $purple,
+      "pink": $pink,
+      "red": $red,
+      "orange": $orange,
+      "yellow": $yellow,
+      "green": $green,
+      "teal": $teal,
+      "cyan": $cyan,
+      "white": $white,
+      "gray": $gray-600,
+      "gray-dark": $gray-800
+    ),
+    $colors
+);
+
+$primary: $yellow !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+    (
+      "primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "light": $light,
+      "dark": $dark
+    ),
+    $theme-colors
+);
+
+$success: $green;
+$success-light: $green-light;
+
+$danger: $red;
+$danger-light: $red-light;
+
+$element-success: $success;
+$element-error: $danger;
+$element-neutral: $neutral;
+
+$bs-first-color: #1b1918;
+$bs-first-elevation: 8px 8px 24px;
+$bs-second-color: #312d2c;
+$bs-second-elevation: -8px -8px 24px;
+$bg-color: #262322;
+
+// Box Shadow
+$bs-first-color: #1b1918;
+$bs-first-elevation: 8px 8px 24px;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+    (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: $spacer,
+      4: ($spacer * 1.5),
+      5: ($spacer * 3)
+    ),
+    $spacers
+);
+$text-muted: $gray-600 !default;
+$table-caption-color: $text-muted !default;
+$table-cell-padding: .75rem !default;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+/**
+ ***** Font Sizes *****
+ */
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-margin-bottom: calc($spacer / 2) !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: inherit !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: primary !default;
+$link-decoration: none !default;
+$link-hover-color: $link-color !default;
+$link-hover-decoration: underline !default;
+
+
+/**
+ ***** Spacing *****
+ */
+
+$space-small: 8px;
+$space-medium: 16px;
+$space-large: 24px;
+$space-big: 40px;
+
+$label-margin-bottom: .5rem !default;
+
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem !default;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+
+// Breakpoint viewport sizes and media queries.
+//
+// Breakpoints are defined as a map of (name: minimum width), order from small to large:
+//
+//    (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+//
+// The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default.
+
+// Name of the next breakpoint, or null for the last breakpoint.
+//
+//    >> breakpoint-next(sm)
+//    md
+//    >> breakpoint-next(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    md
+//    >> breakpoint-next(sm, $breakpoint-names: (xs sm md lg xl))
+//    md
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+// Maximum breakpoint width. Null for the largest (last) breakpoint.
+// The maximum value is calculated as the minimum of the next one less 0.02px
+// to work around the limitations of `min-` and `max-` prefixes and viewports with fractional widths.
+// See https://www.w3.org/TR/mediaqueries-4/#mq-min-max
+// Uses 0.02px rather than 0.01px to work around a current rounding bug in Safari.
+// See https://bugs.webkit.org/show_bug.cgi?id=178261
+//
+//    >> breakpoint-max(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    767.98px
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
+}
+
+// Returns a blank string if smallest breakpoint, otherwise returns the name with a dash in front.
+// Useful for making responsive utilities.
+//
+//    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    ""  (Returns a blank string)
+//    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    "-sm"
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Media that spans multiple breakpoint widths.
+// Makes the @content apply between the min and max breakpoints
+@mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($lower, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// Media between the breakpoint's minimum and maximum widths.
+// No minimum for the smallest breakpoint, and no maximum for the largest one.
+// Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+@mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($name, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}

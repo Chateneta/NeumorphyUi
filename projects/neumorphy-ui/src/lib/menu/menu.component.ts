@@ -8,11 +8,20 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MenuComponent implements OnInit {
 
   @Input() mode?: string;
+  @Input() verticalCenter: boolean = false;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  getMode(){
+    return this.mode;
+  }
+
+  isVerticalCenter(){
+    return this.verticalCenter ? "verticalCenter" : "";
   }
 
 }

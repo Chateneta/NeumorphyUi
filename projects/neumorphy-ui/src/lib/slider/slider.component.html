@@ -9,4 +9,7 @@
         (input)="rangeChangeHandle($event)" 
         [style.background-size]="sizeElement"
     >
+
+    <span *ngIf="withTimeInfo">{{actual}}</span>
+    <span *ngIf="withTimeInfo">{{end}}</span>
 </div>

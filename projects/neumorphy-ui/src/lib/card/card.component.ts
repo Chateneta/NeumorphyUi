@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {IButton} from "../button/IButton.interface";
+import {IIconButton} from "../icon-button/IIconButton.interface";
 
 @Component({
   selector: 'nui-card',
@@ -13,7 +14,7 @@ export class CardComponent implements OnInit {
   @Input() description = '';
   @Input() button1!: IButton;//Button
   @Input() button2!: IButton; //Button
-  @Input() buttonItem!: IButton; //Button
+  @Input() buttonItem!: IIconButton; //Button
   @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';
   @Input() borderRadius = '12'; //Choisir le border radius
   @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';
@@ -29,6 +30,7 @@ export class CardComponent implements OnInit {
   @Input() imgHeight = '';
   @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
   @Input() items: string[] | undefined;
+  @Input() ngContent!: string;
 
   @Output() action = new EventEmitter();
 

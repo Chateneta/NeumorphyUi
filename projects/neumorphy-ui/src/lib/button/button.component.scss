@@ -41,3 +41,7 @@
     padding: 1.5rem;
   }
 }
+
+:host button:focus-visible, :host button:focus {
+  outline: none;
+}

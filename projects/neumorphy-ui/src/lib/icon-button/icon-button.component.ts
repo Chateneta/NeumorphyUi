@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'nui-icon-button',
@@ -7,24 +7,24 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef }
 })
 export class IconButtonComponent implements OnInit {
 
-  @Input() size:string = 'sm';
-  @Input() pushPull:boolean = false;
-  @Input() active:boolean = false;
+  @Input() size: string = 'sm';
+  @Input() pushPull: boolean = false;
+  @Input() active: boolean = false;
   @Output() clic = new EventEmitter();
 
   constructor() {
   }
 
   ngOnInit(): void {
-    
+
   }
 
   onClick() {
-    if(this.pushPull){
+    if (this.pushPull) {
       this.active = !this.active;
       this.isActive();
-      this.clic.emit();
     }
+    this.clic.emit();
   }
 
   isActive() {

@@ -21,6 +21,5 @@ const Template: Story<MenuComponent> = (args: MenuComponent) => ({
 
 export const Base = Template.bind({});
 Base.args = {
-  theme:'',
   mode:'',
 }

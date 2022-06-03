@@ -2,8 +2,6 @@ import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from '@storybook/angular/types-6-0';
 import {ErrorComponent} from "./error.component";
-import {IButton} from "../button/IButton.interface";
-import {Input} from "@angular/core";
 import {ButtonComponent} from "../button/button.component";
 
 export default {
@@ -67,4 +65,10 @@ InfoPrompt.args = {
   display: 'block',
   button1: button1,
   button2: button2
+}
+export const ModalBottom = Template.bind({});
+ModalBottom.args = {
+  txt: 'Information',
+  type: 'info',
+  display: 'modal-bottom',
 }

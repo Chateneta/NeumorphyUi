@@ -1,11 +1,12 @@
-<div class="error" [class.modal]="display === 'modal' ? true : null">
-  <div style="display: flex; margin-bottom: 1em">
+<div [class.modal-bottom]="display === 'modal-bottom' ? true : null" [class.modal]="display === 'modal' ? true : null"
+     class="error">
+  <div style="display: flex; justify-content:space-between; width: 100%">
     <span class="txt" [style.color]="getColor()">{{txt}}</span>
     <button class="close" (click)="dismiss()">
       <img src="/assets/img/icons8-close-60.png" alt="close" style="height: 2em">
     </button>
   </div>
-  <div class="buttons" *ngIf="button1 || button2">
+  <div *ngIf="button1 || button2" class="buttons" style="margin-top: 1em;">
     <nui-button [active]="button1.active!" [size]="button1.size!" [label]="button1.label"
                 (clic)="button1.action?.();dismiss()" style="margin-right: 3em;"></nui-button>
     <nui-button [active]="button2.active!" [size]="button2.size!" [label]="button2.label"

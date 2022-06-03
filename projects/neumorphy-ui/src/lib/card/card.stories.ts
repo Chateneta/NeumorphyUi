@@ -2,15 +2,15 @@ import {CommonModule} from '@angular/common';
 import {moduleMetadata} from '@storybook/angular';
 import {Story} from '@storybook/angular/types-6-0';
 import {CardComponent} from "./card.component";
-import {ButtonComponent} from "../button/button.component";
+import {IconButtonComponent} from '../icon-button/icon-button.component';
 
 export default {
   title: 'Components/Card',
   component: CardComponent,
-  subcomponents: {ButtonComponent},
+  subcomponents: {IconButtonComponent},
   decorators: [
     moduleMetadata({
-      declarations: [CardComponent,ButtonComponent],
+      declarations: [CardComponent, IconButtonComponent],
       imports: [CommonModule],
     }),
   ],
@@ -19,11 +19,7 @@ export default {
 const Template: Story<CardComponent> = (args: CardComponent) => ({
   component: CardComponent,
   props: args,
-  /*  template: `<nui-card title="title" subtitle="subtitle" description="description" color="raisin" borderRadius="10"
-              elevation="md"
-              padding="md" sense="row"
-              width="20em" align="center"
-              [headerImage]="img" imgHeight="8em"></nui-card>`,*/
+  // template: `<nui-card>{{ ngContent }}</nui-card>`
 });
 
 const items = ['Item 1', 'Item 2'];
@@ -95,15 +91,16 @@ Item.args = {
   sense: 'row',
   width: '25em',
   align: 'center',
+  justify: 'left',
   itemImage: img,
   buttonItem: {
-    label: '+',
-    active: true,
+    active: false,
     size: 'sm',
     action: function () {
       alert('added');
     }
-  }
+  },
+
 };
 
 export const ColImage = Template.bind({});

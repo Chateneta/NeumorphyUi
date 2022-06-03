@@ -62,7 +62,9 @@
     <div class="subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
   </div>
   <div *ngIf="buttonItem" style="position: absolute;right: 1em">
-    <nui-button [rounded]="true" [active]="buttonItem.active!" size="sm" [label]="buttonItem.label!"
-                (clic)="button1!.action?.()"></nui-button>
+    <nui-icon-button [pushPull]="false" [active]="buttonItem.active!" size="sm"
+                     (clic)="buttonItem!.action?.()">
+      <ng-content></ng-content>
+    </nui-icon-button>
   </div>
 </div>

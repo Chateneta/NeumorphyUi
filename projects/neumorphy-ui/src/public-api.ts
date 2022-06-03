@@ -20,6 +20,7 @@ export * from './lib/list/list.component';
 export * from './lib/title/title.component';
 export * from './lib/list-item/list-item.component';
 export * from './lib/text/text.component';
+export * from './lib/icon-button/icon-button.component'
 
 export * from './lib/carousel/image-interface';
 export * from './lib/button/IButton.interface';

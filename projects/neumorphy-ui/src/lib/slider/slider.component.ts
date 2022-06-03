@@ -7,14 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
+  @Input() actual?:string = '0:00';
+  @Input() end?:string;
+  @Input() withTimeInfo:boolean = false;
   @Input() rangeId?:string;
   @Input() label?:string;
   @Input() type?:string;
 
   constructor() { }
 
-  value:number = 5;
-  sizeElement:string = "50% 100%";
+  value:number = 3;
+  sizeElement:string = "30% 100%";
 
   ngOnInit(): void {
   }

@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');
+
 :host {
   width: 100%;
 
-  .slider {
-
+  .slider { 
     input[type="range"] {
       position: relative;
       z-index: 1;
       width: 100%;
       -webkit-appearance: none;
       height: 0.3rem;
-      // border-radius: 1rem;
+      border-radius: 1rem;
       background: #201E1D linear-gradient(100deg, rgba(250, 164, 73, 1) 0%, rgba(246, 204, 110, 1) 50%, rgba(250, 164, 73, 1) 100%) no-repeat;
 
       &::after {
@@ -49,6 +50,12 @@
       text-transform: capitalize;
       font-size: small;
       color: #ECEBE4;
+    }
+    span{
+      font-family: Mukta, sans-serif;
+      &:last-child{
+        float: right;
+      }
     }
   }
 

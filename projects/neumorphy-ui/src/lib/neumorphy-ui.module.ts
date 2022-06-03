@@ -19,6 +19,7 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { TextComponent } from './text/text.component';
 import { TitleComponent } from './title/title.component';
 import { RadiosComponent } from './radios/radios.component';
+import { IconButtonComponent } from './icon-button/icon-button.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -36,6 +37,7 @@ const COMPONENTS = [
   ListItemComponent,
   TextComponent,
   TitleComponent,
+  IconButtonComponent,
 ];
 
 @NgModule({

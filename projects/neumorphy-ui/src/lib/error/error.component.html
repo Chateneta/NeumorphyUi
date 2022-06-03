@@ -1,6 +1,6 @@
 <div [class.modal-bottom]="display === 'modal-bottom' ? true : null" [class.modal]="display === 'modal' ? true : null"
      class="error">
-  <div style="display: flex; justify-content:space-between; width: 100%">
+  <div class="content">
     <span class="txt" [style.color]="getColor()">{{txt}}</span>
     <button class="close" (click)="dismiss()">
       <img src="/assets/img/icons8-close-60.png" alt="close" style="height: 2em">

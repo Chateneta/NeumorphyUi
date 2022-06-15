@@ -35,3 +35,6 @@ export * from './lib/radios/IRadios.interface';
 export * from './lib/slider/ISlider.interface';
 export * from './lib/text/IText.interface';
 export * from './lib/title/ITitle.interface';
+export * from './lib/radios/radios.component';
+
+export * from './lib/carousel/image-interface';

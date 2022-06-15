@@ -1,5 +1,20 @@
-<splide [options]="{ type: 'slide', keyboard: false, autoheight:true}">
-    <splide-slide *ngFor="let image of images">
-        <img [src]="image.src" alt="" />
+<splide 
+    [options]="{
+        type: 'loop',
+        keyboard: false,
+        fixedHeight: '20vh',
+        focus:'center',
+        gap:'40vw',
+        perPage: 3,
+        pagination:false,
+        arrows:false
+
+    }"
+    (onMoved)="onSplideMoved($event)"
+>
+    <splide-slide *ngFor="let image of images;let index = index">
+        <div id="toto" >
+            <img [src]="image.src" alt="" [id]="index" #img/>
+        </div>
     </splide-slide>
 </splide>

@@ -63,7 +63,7 @@
   </div>
   <div *ngIf="buttonItem" style="position: absolute;right: 1em">
     <nui-icon-button [pushPull]="false" [active]="buttonItem.active!" size="sm"
-                     (clic)="buttonItem!.action?.()">
+                     (clic)="buttonItemAction?.()">
       <ng-content></ng-content>
     </nui-icon-button>
   </div>

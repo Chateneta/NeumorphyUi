@@ -1,0 +1,4261 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "IButton",
+            "id": "interface-IButton-4ce3bbd403910498e3958fadfa1113f79a755e1c482c8f5e3dc07cb3f5099e611f24c1cb605be69d083fa4a81a02770ce23a1fac2d75cf2f821b70d972ab0983",
+            "file": "projects/neumorphy-ui/src/lib/button/IButton.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IButton {\r\n  label: string;\r\n  size?: string;\r\n  rounded?: boolean;\r\n  active?: boolean;\r\n\r\n  action?(): any;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "active",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "rounded",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 167,
+            "methods": [
+                {
+                    "name": "action",
+                    "args": [],
+                    "optional": true,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 7,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ]
+        },
+        {
+            "name": "Icard",
+            "id": "interface-Icard-740ec2a4e9cd1bd2bd4c019e1ab751d5d71855146387eab36b98b08ba5861ff74b322afc6382311f136d4e65ba497c12d87fac0391ac20d14b937bff2f0b4c9d",
+            "file": "projects/neumorphy-ui/src/lib/card/ICard.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import {IButton} from \"../button/IButton.interface\";\r\n\r\nexport interface Icard {\r\n  title?: string;\r\n  subtitle?: string;\r\n  description?: string;\r\n  button1?: IButton;\r\n  button2?: IButton;\r\n  buttonItem?: IButton;\r\n  color?: string;\r\n  borderRadius?: string;\r\n  elevation?: string;\r\n  display?: string;\r\n  headerImage?: string;\r\n  imgSrc?: string;\r\n  justify?: string;\r\n  align?: string;\r\n  textAlign?: string;\r\n  itemImage?: string;\r\n  width?: string;\r\n  sense?: string;\r\n  imgHeight?: string;\r\n  padding?: string;\r\n  items?: string[];\r\n  ngContent?:string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "align",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "borderRadius",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "button1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IButton",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "button2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IButton",
+                    "optional": true,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "buttonItem",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IButton",
+                    "optional": true,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "display",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "elevation",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "headerImage",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "imgHeight",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "imgSrc",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "itemImage",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "items",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "justify",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "ngContent",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "padding",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "sense",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "subtitle",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "textAlign",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "width",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ICarousel",
+            "id": "interface-ICarousel-e44f3d64818f22b88ca2372a027f5d5527cf6198f5a9d02c3804e00a66e3d023fa392e1f121f28e7e63ccfca5a709b0f7dcf84ac1b1e1ae084b539185ddb6d10",
+            "file": "projects/neumorphy-ui/src/lib/carousel/ICarousel.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import {ImageInterface} from \"./image-interface\";\r\n\r\nexport interface ICarousel {\r\n  images?: ImageInterface[];\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "images",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ImageInterface[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ICheckbox",
+            "id": "interface-ICheckbox-d6733221fe4e5967639fdc9c789eab35022813b34ef052c0e71c7a871ee4b9dcad2e8c94f1211a601d41aa4e562930b804572128c30e1351873680edba6a4718",
+            "file": "projects/neumorphy-ui/src/lib/checkbox/ICheckbox.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ICheckbox {\r\n}\r\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        },
+        {
+            "name": "IError",
+            "id": "interface-IError-9269666f19320e17a3630bad2f6a9720ef7fe5fd99d28537ff5d4cc53c3df54ecbc16df4adc0faa5358a3a4e4d113a5302313d42be33ff8132366d81f2d94b31",
+            "file": "projects/neumorphy-ui/src/lib/error/IError.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import {IButton} from \"../button/IButton.interface\";\r\n\r\nexport interface IError {\r\n  display?: string;\r\n  txt: string;\r\n  type?: string;\r\n  button1?: IButton;\r\n  button2?: IButton;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "button1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IButton",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "button2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IButton",
+                    "optional": true,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "display",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "txt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IIconButton",
+            "id": "interface-IIconButton-a22d66ab58856fac6549741f0825c0e73af6fff7aa3b8f9d48e8d6945dec13ac3c20e0d5065c4eb0d48148dba9aee412e9d557ee00d4a35fb2fe3d3ed9a5ce72",
+            "file": "projects/neumorphy-ui/src/lib/icon-button/IIconButton.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import {EventEmitter, Input, Output} from \"@angular/core\";\r\n\r\nexport interface IIconButton {\r\n  pushPull?: boolean;\r\n  size?: string;\r\n  active?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "active",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "pushPull",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IInput",
+            "id": "interface-IInput-2d5bd47fdecc5433ea1cb85a8c4000ea0f03593ee2526997762d79d1a727c468d9de949251a0eb2ce118a970aa800d8da1678d978e9290d0e76ace1075b3d3cb",
+            "file": "projects/neumorphy-ui/src/lib/input/IInput.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IInput {\r\n  size?: string;\r\n  placeholder?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IList",
+            "id": "interface-IList-8068b83871b750d737a0a25aca81790a021dcb7010b38d13fcea34040351c3895cb30aace5b0cbaafc4ddef63d6c4631fdfe591d7e4561fbe5e49f258f430f86",
+            "file": "projects/neumorphy-ui/src/lib/list/IList.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IList {\r\n\r\n}\r\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        },
+        {
+            "name": "IListItem",
+            "id": "interface-IListItem-747a391d0af8815999e133246503354eb645c9af5b7d3040bf6a891e465b2dfdb82102067ae4eed5df9d79fa709ca4878cf7d40f0af424cdca8ed07a27639360",
+            "file": "projects/neumorphy-ui/src/lib/list-item/IListItem.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IListItem {\r\n\r\n}\r\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        },
+        {
+            "name": "ImageInterface",
+            "id": "interface-ImageInterface-b1237f5dedb31b6658c97a4ffd7d95d1f6b6462ff1df4a72b8221bd9525052989874d149bf99deeed88c25eb138e13829c7699a3a9a99ca488a38dbd213d565c",
+            "file": "projects/neumorphy-ui/src/lib/carousel/image-interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ImageInterface {\r\n    src:string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "src",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IRadios",
+            "id": "interface-IRadios-a00022bc2e90acdd7d138c7b7582e63b3f34118d12f6c43f3b3d603055d140198e94d9ce2bd8baebddd18901299cb093fea257519d001aeda382ddf52cd93689",
+            "file": "projects/neumorphy-ui/src/lib/radios/IRadios.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IRadios {\r\n  id?: string;\r\n  label?: string;\r\n  disabled?: boolean;\r\n  checked?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "checked",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ISlider",
+            "id": "interface-ISlider-0452c72e177827c4d6f17738961b82f47abfa2ac1f965d59703b0da6ca3f689835f1ec657147c271bd34c54042dd5334a671e66bac522a54bd226af976b83262",
+            "file": "projects/neumorphy-ui/src/lib/slider/ISlider.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ISlider {\r\n  rangeId?: string;\r\n  label?: string;\r\n  type?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "rangeId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IText",
+            "id": "interface-IText-bc1cfed9ddb6a81ec4876ec2ccd7dec16889f20dab9e685ffd3016debef32c1d7f51a2f79221a3e4dc17ab6ebbd3ce9853b233ea770dfb32a1288becc0ac5e9e",
+            "file": "projects/neumorphy-ui/src/lib/text/IText.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IText {\r\n  italic?: boolean;\r\n  bold?: boolean;\r\n  size?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "bold",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "italic",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "ITitle",
+            "id": "interface-ITitle-7abfd3680827b8d48124f0a5f5d8a2cd9e60ae9615cadf9b81d852ad08f3df38d1c14796939db1577182cdf60a3587bbe5c1a80c018f23cb4bdd67dcce8edefc",
+            "file": "projects/neumorphy-ui/src/lib/title/ITitle.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ITitle {\r\n  italic?: boolean;\r\n  bold?: boolean;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "bold",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "italic",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "NeumorphyUIService",
+            "id": "injectable-NeumorphyUIService-384d6181cd781266a26a8c37ca695524b0aa7e4aecbccc3163395e47789e3ccf8267aa54e0e3b4f4e02c933de6e0d259affc8a70644be5c69c00cd60e0c94610",
+            "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class NeumorphyUIService {\r\n\r\n  constructor() { }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "ParametersService",
+            "id": "injectable-ParametersService-ba060faf4984b49eda2784e70d58ebbff10f404d17266421a8c219114ab0692e6582823132054db363c9c11113f238619c964e52d43bd98f626790bae610a5de",
+            "file": "projects/neumorphy-ui/src/lib/services/parameters.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import {Injectable} from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class ParametersService {\r\n\r\n  constructor() {\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-a727a10c261faf4bc7d24c62565ea6dd6518b1519fb3c19d31b9d6fda11499e9f58dab9a122f8ae36553e2b9fd3028fb6ed26d842eeee9bb33edb76b6de00cbd",
+            "file": "projects/neumorphy-ui/src/lib/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "active",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "rounded",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clic",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getBtnClass",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSizeComponent",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"btn-sm-nui \" | \"btn-md-nui \" | \"btn-lg-nui \"",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isActive",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"btn-active-nui\"",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isRounded",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"btn-rounded-nui\" | \"btn-rect-nui\"",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>Composant permettant de créer des boutons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;nui-button [label]=&quot;&#39;label&#39;&quot; [size]=&quot;&#39;sm&#39;&quot; [rounded]=&quot;false&quot; [active]=&quot;false&quot;&gt;&lt;/nui-button&gt;</code></pre></div>",
+            "rawdescription": "\n\nComposant permettant de créer des boutons personnalisés\n\n## Usage\n\n```ts\n<nui-button [label]=\"'label'\" [size]=\"'sm'\" [rounded]=\"false\" [active]=\"false\"></nui-button>\n```\n",
+            "type": "component",
+            "sourceCode": "import {Component, EventEmitter, Input, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des boutons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <nui-button [label]=\"'label'\" [size]=\"'sm'\" [rounded]=\"false\" [active]=\"false\"></nui-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'nui-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent {\r\n\r\n  @Input() label = '';\r\n  @Input() size = 'sm';\r\n  @Input() rounded = false;\r\n  @Input() active = false;\r\n  @Output() clic = new EventEmitter();\r\n\r\n  constructor() {\r\n  }\r\n\r\n  onClick() {\r\n    this.clic.emit();\r\n  }\r\n\r\n  isRounded() {\r\n    return this.rounded ? 'btn-rounded-nui' : 'btn-rect-nui';\r\n  }\r\n\r\n  isActive() {\r\n    return this.active ? 'btn-active-nui' : '';\r\n  }\r\n\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'btn-sm-nui '\r\n\r\n      case 'md':\r\n        return 'btn-md-nui '\r\n\r\n      case 'lg':\r\n        return 'btn-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n\r\n  getBtnClass() {\r\n    return `${this.isRounded()} ${this.getSizeComponent()} ${this.isActive()}`\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../assets/scss/variables\";\r\n\r\n:host button {\r\n  background: $bg-color;\r\n  border: none;\r\n  font-size: 1rem;\r\n  color: #ecebe4;\r\n  box-shadow: $bs-first-elevation $bs-first-color, $bs-second-elevation $bs-second-color;\r\n  min-width: 5rem;\r\n  max-width: 10rem;\r\n  height: 2.5rem;\r\n  cursor: pointer;\r\n\r\n  &:active {\r\n    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;\r\n    color: #faa449;\r\n  }\r\n\r\n  &.btn-active-nui {\r\n    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;\r\n    color: #faa449;\r\n  }\r\n\r\n  &.btn-rounded-nui {\r\n    border-radius: 50%;\r\n  }\r\n\r\n  &.btn-rect-nui {\r\n    border-radius: 15px;\r\n  }\r\n\r\n  &.btn-sm-nui {\r\n    padding: 0.5rem;\r\n  }\r\n\r\n  &.btn-md-nui {\r\n    padding: 1rem;\r\n  }\r\n\r\n  &.btn-lg-nui {\r\n    padding: 1.5rem;\r\n  }\r\n}\r\n\r\n:host button:focus-visible, :host button:focus {\r\n  outline: none;\r\n}\r\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 23
+            },
+            "templateData": "<button [class]=\"getBtnClass()\" (click)=\"onClick()\">\r\n  {{label}}\r\n</button>\r\n"
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-6b0725b66ca652900cb5b0c6531988e23a1418a0242d030682a9a209c205a3974b1e7c61da55135fc13c912a6ef5ebcb58717bf713f697d561935d955454c578",
+            "file": "projects/neumorphy-ui/src/lib/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-card",
+            "styleUrls": [
+                "./card.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "align",
+                    "defaultValue": "'center'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "\"flex-start\" | \"flex-end\" | \"center\"",
+                    "decorators": []
+                },
+                {
+                    "name": "borderRadius",
+                    "defaultValue": "'12'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "button1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "IButton",
+                    "decorators": []
+                },
+                {
+                    "name": "button2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "IButton",
+                    "decorators": []
+                },
+                {
+                    "name": "buttonItem",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "IButton",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'alabaster'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "\"orangeyellow\" | \"raisin\" | \"alabaster\" | \"rajah\"",
+                    "decorators": []
+                },
+                {
+                    "name": "description",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "display",
+                    "defaultValue": "'buttons'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "\"buttons\" | \"image\" | \"item\"",
+                    "decorators": []
+                },
+                {
+                    "name": "elevation",
+                    "defaultValue": "'md'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "\"sm\" | \"md\" | \"lg\" | \"xl\"",
+                    "decorators": []
+                },
+                {
+                    "name": "headerImage",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imgHeight",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imgSrc",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "itemImage",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "items",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "string[] | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "justify",
+                    "defaultValue": "'center'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "\"left\" | \"right\" | \"center\"",
+                    "decorators": []
+                },
+                {
+                    "name": "ngContent",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "padding",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "\"none\" | \"sm\" | \"md\" | \"lg\" | \"xl\"",
+                    "decorators": []
+                },
+                {
+                    "name": "sense",
+                    "defaultValue": "'column'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "subtitle",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "textAlign",
+                    "defaultValue": "'center'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "\"center\" | \"start\" | \"end\"",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "width",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "action",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 34,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getBackgroundColor",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"linear-gradient(145deg, #ddb863, #ffda76)\" | \"linear-gradient(145deg, #22201f, #292524)\" | \"linear-gradient(145deg, #d4d4cd, #fdfbf4)\" | \"linear-gradient(145deg, #e19442, #ffaf4e)\"",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getColor",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"black\" | \"white\"",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getElevation",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getPadding",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"0\" | \"0.5em 1em\" | \"1em 2em\" | \"1.5em 3em\" | \"2em 4em\"",
+                    "typeParameters": [],
+                    "line": 101,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 121,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\nimport {IButton} from \"../button/IButton.interface\";\r\n\r\n@Component({\r\n  selector: 'nui-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1!: IButton;//Button\r\n  @Input() button2!: IButton; //Button\r\n  @Input() buttonItem!: IButton; //Button\r\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify: 'left' | 'right' | 'center' = 'center';\r\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'center';\r\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() items: string[] | undefined;\r\n  @Input() ngContent!: string;\r\n\r\n  @Output() action = new EventEmitter();\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n\r\n    const defaultBoxShadow = `10px 10px 20px ${col[0]}, -10px -10px 20px ${col[1]}`;\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return defaultBoxShadow\r\n      case 'md':\r\n        return `15px 15px 30px ${col[0]}, -15px -15px 30px ${col[1]}`\r\n      case 'lg':\r\n        return `24px 24px 48px ${col[0]}, -24px 24px 48px ${col[1]}`\r\n      case 'xl':\r\n        return `32px 32px 64px ${col[0]}, -32px -32px 64px ${col[1]}`\r\n      default:\r\n        return defaultBoxShadow\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');\r\n\r\n.card {\r\n  font-family: Mukta, sans-serif;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-image {\r\n  margin-right: 1em;\r\n  height: 4em;\r\n  box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
+                    "styleUrl": "./card.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 116
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"card\" *ngIf=\"display === 'buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.text-align]=\"textAlign\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense === 'column'? '1em' : 0\"\r\n       [style.margin-right]=\"sense === 'row' ? '1em' : 0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" style=\"justify-content:center\">\r\n      <nui-button [active]=\"button1!.active!\" [size]=\"button1!.size!\" [label]=\"button1!.label!\"\r\n                  [style]=\"button2?'margin-right: 1em':null\" (clic)=\"button1!.action?.()\"></nui-button>\r\n      <nui-button [active]=\"button2!.active!\" [size]=\"button2!.size!\" [label]=\"button2!.label!\"\r\n                  (clic)=\"button1!.action?.()\"></nui-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div *ngIf=\"display==='image'\" class=\"card\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div *ngIf=\"display==='item'\" class=\"card\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <nui-icon-button [pushPull]=\"false\" [active]=\"buttonItem.active!\" size=\"sm\"\r\n                     (clic)=\"buttonItem!.action?.()\">\r\n      <ng-content></ng-content>\r\n    </nui-icon-button>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "CarouselComponent",
+            "id": "component-CarouselComponent-2cdb79a5af47b71282f62e76b4b533cabab42696b915038bc1045b24fa642ecaa13fafef3d3ffbdc88d526f944d381de47948400ced4306fed324364242ac1d8",
+            "file": "projects/neumorphy-ui/src/lib/carousel/carousel.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-carousel",
+            "styleUrls": [
+                "./carousel.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./carousel.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "images",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "ImageInterface[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { ImageInterface } from './image-interface';\r\n\r\n@Component({\r\n  selector: 'nui-carousel',\r\n  templateUrl: './carousel.component.html',\r\n  styleUrls: ['./carousel.component.scss']\r\n})\r\nexport class CarouselComponent implements OnInit {\r\n\r\n  @Input() images ?: ImageInterface[];\r\n  constructor() { }\r\n  ngOnInit(): void {\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host{\r\n    width: 100%;\r\n    height: 10rem;\r\n    img{\r\n        max-height: 30rem;\r\n    }\r\n}",
+                    "styleUrl": "./carousel.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<splide [options]=\"{ type: 'slide', keyboard: false, autoheight:true}\">\r\n    <splide-slide *ngFor=\"let image of images\">\r\n        <img [src]=\"image.src\" alt=\"\" />\r\n    </splide-slide>\r\n</splide>"
+        },
+        {
+            "name": "CheckboxComponent",
+            "id": "component-CheckboxComponent-320507fd65ae6c0ecf292bf28b95e4c16577dea717a4e92a0d7226dd3575fac5194769ccf81a7c40d836ddda6d32056f16b32e11800ca36f8899426c76e48765",
+            "file": "projects/neumorphy-ui/src/lib/checkbox/checkbox.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-checkbox",
+            "styleUrls": [
+                "./checkbox.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'default label'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-checkbox',\r\n  templateUrl: './checkbox.component.html',\r\n  styleUrls: ['./checkbox.component.scss']\r\n})\r\nexport class CheckboxComponent implements OnInit {\r\n  @Input() id: string = '';\r\n  @Input() label: string = 'default label';\r\n  @Input() disabled: boolean = false;\r\n  @Input() checked: boolean = false;\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../assets/scss/variables\";\r\n@import '../../../assets/scss/styles';\r\n\r\n.checkboxList {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n\r\n  &__checkbox {\r\n    position: absolute;\r\n    left: -9999px;\r\n  }\r\n  &__checkbox + label {\r\n    display: flex;\r\n    justify-content: center;\r\n    overflow: visible;\r\n    width: 25px;\r\n    height: 25px;\r\n    border-radius: 50%;\r\n    background: rgb(218,135,50);\r\n    background: linear-gradient(90deg, #da8732 0%, #f0bc5d 46%, #fcedb9 100%);\r\n    box-shadow: 0 0 24px #f0bc5d;\r\n    cursor: pointer;\r\n    > i {\r\n      font-size: 2rem;\r\n      color: rgba(#6a9bd8, 0.8);\r\n    }\r\n    &:after {\r\n      content: \"\";\r\n      width: 40px;\r\n      height: 40px;\r\n      border-radius: 50%;\r\n      display: block;\r\n      background-color: #2f261b;\r\n      z-index: -1;\r\n      position: absolute;\r\n      margin-top: -7px;\r\n    }\r\n    &:before {\r\n      content: \"\";\r\n      width: 15px;\r\n      height: 15px;\r\n      border-radius: 50%;\r\n      display: block;\r\n      background-color: $black;\r\n      z-index: -1;\r\n      position: absolute;\r\n      margin-top: 50px;\r\n    }\r\n  }\r\n  &__checkbox:checked + label {\r\n    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;\r\n\r\n    > i {\r\n      font-size: 1.8rem;\r\n      color: rgba(#6a9bd8, 1);\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "./checkbox.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"checkboxList\">\r\n  <div class=\"checkboxList__item\">\r\n    <input type=\"checkbox\" name=\"checkbox\" id=\"checkbox\" class=\"checkboxList__checkbox\"/>\r\n    <label for=\"checkbox\">\r\n      <i class=\"fas fa-phone-alt\"></i>\r\n    </label>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ErrorComponent",
+            "id": "component-ErrorComponent-7644f8d07962efd670125a287a060780fbbd739336b2ab89d8fc6b01c7cd659bcef1c40de3c260e9d22aa2e649271dc4f9f2b15f1d25ad22fda8c902843bd8da",
+            "file": "projects/neumorphy-ui/src/lib/error/error.component.ts",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-error",
+            "styleUrls": [
+                "./error.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./error.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "button1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "IButton",
+                    "decorators": []
+                },
+                {
+                    "name": "button2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "IButton",
+                    "decorators": []
+                },
+                {
+                    "name": "display",
+                    "defaultValue": "'modal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "\"modal\" | \"block\" | \"modal-bottom\"",
+                    "decorators": []
+                },
+                {
+                    "name": "txt",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'error'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "\"success\" | \"warning\" | \"info\" | \"error\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "close",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "dismiss",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getColor",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"#0ca900\" | \"#d4a100\" | \"#0071b9\" | \"#cf2832\"",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';\r\nimport {IButton} from \"../button/IButton.interface\";\r\n\r\n@Component({\r\n  selector: 'nui-error',\r\n  templateUrl: './error.component.html',\r\n  styleUrls: ['./error.component.css'],\r\n  encapsulation: ViewEncapsulation.None,\r\n})\r\nexport class ErrorComponent implements OnInit {\r\n\r\n  @Input() display: 'modal' | 'block' | 'modal-bottom' = 'modal';\r\n  @Input() txt = '';\r\n  @Input() type: 'success' | 'warning' | 'info' | 'error' = 'error';\r\n  @Input() button1!: IButton;\r\n  @Input() button2!: IButton;\r\n  @Output() close = new EventEmitter();\r\n\r\n  getColor() {\r\n    switch (this.type) {\r\n      case 'success':\r\n        return '#0ca900'\r\n      case 'warning':\r\n        return '#d4a100'\r\n      case 'info':\r\n        return '#0071b9'\r\n      case 'error':\r\n        return '#cf2832'\r\n      default:\r\n        return '#cf2832'\r\n    }\r\n  }\r\n\r\n  dismiss() {\r\n    this.close.emit();\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".error {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background: #262322;\r\n  box-shadow: inset 20px 20px 60px #201e1d,\r\n  inset -20px -20px 60px #2c2827;\r\n  padding: 16px 24px;\r\n  align-items: center;\r\n  font-family: Mukta, sans-serif;\r\n  color: white;\r\n  font-weight: bold;\r\n  justify-content: space-between;\r\n  border-radius: 10px;\r\n  z-index: 5;\r\n}\r\n\r\n.modal {\r\n  position: fixed;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  max-width: 90%;\r\n  height: max-content;\r\n}\r\n\r\n.modal-bottom {\r\n  position: fixed;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 5px;\r\n  margin: auto;\r\n  width: 90%;\r\n  height: max-content;\r\n}\r\n\r\n.close {\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  justify-content: center;\r\n  width: 100%\r\n}\r\n\r\n",
+                    "styleUrl": "./error.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 36
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div [class.modal-bottom]=\"display === 'modal-bottom' ? true : null\" [class.modal]=\"display === 'modal' ? true : null\"\r\n     class=\"error\">\r\n  <div class=\"content\">\r\n    <span class=\"txt\" [style.color]=\"getColor()\">{{txt}}</span>\r\n    <button class=\"close\" (click)=\"dismiss()\">\r\n      <img src=\"/assets/img/icons8-close-60.png\" alt=\"close\" style=\"height: 2em\">\r\n    </button>\r\n  </div>\r\n  <div *ngIf=\"button1 || button2\" class=\"buttons\" style=\"margin-top: 1em;\">\r\n    <nui-button [active]=\"button1.active!\" [size]=\"button1.size!\" [label]=\"button1.label\"\r\n                (clic)=\"button1.action?.();dismiss()\" style=\"margin-right: 3em;\"></nui-button>\r\n    <nui-button [active]=\"button2.active!\" [size]=\"button2.size!\" [label]=\"button2.label\"\r\n                (clic)=\"button2.action?.();dismiss()\"></nui-button>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "IconButtonComponent",
+            "id": "component-IconButtonComponent-4f90f1c8bfd33a807f27b444ea44e1f4c00e258a5f1786be404c324f99e292765d77a6a2b0ba035097e9ad2b6a39b523ee6d2f9cb552fd2759cd262ac3baf1c8",
+            "file": "projects/neumorphy-ui/src/lib/icon-button/icon-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-icon-button",
+            "styleUrls": [
+                "./icon-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "active",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "pushPull",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clic",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getBtnClass",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSizeComponent",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"btn-sm-nui \" | \"btn-md-nui \" | \"btn-lg-nui \"",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isActive",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"btn-active-nui\"",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-icon-button',\r\n  templateUrl: './icon-button.component.html',\r\n  styleUrls: ['./icon-button.component.scss']\r\n})\r\nexport class IconButtonComponent implements OnInit {\r\n\r\n  @Input() size:string = 'sm';\r\n  @Input() pushPull:boolean = false;\r\n  @Input() active:boolean = false;\r\n  @Output() clic = new EventEmitter();\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    \r\n  }\r\n\r\n  onClick() {\r\n    if(this.pushPull){\r\n      this.active = !this.active;\r\n      this.isActive();\r\n      this.clic.emit();\r\n    }\r\n  }\r\n\r\n  isActive() {\r\n    return this.active ? 'btn-active-nui' : '';\r\n  }\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'btn-sm-nui '\r\n\r\n      case 'md':\r\n        return 'btn-md-nui '\r\n\r\n      case 'lg':\r\n        return 'btn-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n\r\n  getBtnClass() {\r\n    return `${this.getSizeComponent()} ${this.isActive()}`\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../assets/scss/variables\";\r\n\r\n:host button {\r\n  background: $bg-color;\r\n  border: none;\r\n  font-size: 1rem;\r\n  color: #ecebe4;\r\n  background: linear-gradient(145deg, #232120, #1e1c1b);\r\n  box-shadow: 7px 7px 13px #1b1a19,\r\n  -7px -7px 13px #272423;\r\n  width: 2.5rem;\r\n  height: 2.5rem;\r\n  padding: 0.5rem;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 0.3rem;\r\n\r\n  i {\r\n    font-size: 1rem;\r\n  }\r\n\r\n  &:active {\r\n    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;\r\n    color: #faa449;\r\n  }\r\n\r\n  &.btn-active-nui {\r\n    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;\r\n    color: #faa449;\r\n  }\r\n\r\n  &.btn-md-nui {\r\n    width: 3rem;\r\n    height: 3rem;\r\n    padding: 0.8rem;\r\n  }\r\n\r\n  &.btn-lg-nui {\r\n    width: 4rem;\r\n    height: 4rem;\r\n    padding: 1rem;\r\n  }\r\n}\r\n\r\n:host button:focus-visible, :host button:focus {\r\n  outline: none;\r\n}\r\n",
+                    "styleUrl": "./icon-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button [class]=\"getBtnClass()\" (click)=\"onClick()\">\r\n    <ng-content></ng-content>\r\n</button>\r\n  "
+        },
+        {
+            "name": "InputComponent",
+            "id": "component-InputComponent-1e0e398cfe695658cbe31217fa67407edf84fda093a39e1558287eced0d4f95bce8ac24c23bb277c9572d498e78680f451667d24d70050d0a363c5987c71c923",
+            "file": "projects/neumorphy-ui/src/lib/input/input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-input",
+            "styleUrls": [
+                "./input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "placeholder",
+                    "defaultValue": "'Type anything ...'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getSize",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSizeComponent",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"input-sm-nui \" | \"input-md-nui \" | \"input-lg-nui \"",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-input',\r\n  templateUrl: './input.component.html',\r\n  styleUrls: ['./input.component.scss']\r\n})\r\nexport class InputComponent {\r\n\r\n  @Input() size = 'sm';\r\n  @Input() placeholder = 'Type anything ...';\r\n  constructor() { }\r\n\r\n  getSize() {\r\n    return 'input-sm-nui'\r\n  }\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'input-sm-nui '\r\n\r\n      case 'md':\r\n        return 'input-md-nui '\r\n\r\n      case 'lg':\r\n        return 'input-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../../assets/scss/variables\";\r\n\r\n.input-nui {\r\n  width: 20.4rem;\r\n  height: 4rem;\r\n  border: none;\r\n  border-radius: 1rem;\r\n  box-shadow: inset .2rem .2rem .5rem #1d1a1a,\r\n  inset -.2rem -.2rem .5rem #302c2b;\r\n  background: none;\r\n  font-family: inherit;\r\n  color: #ECEBE4;\r\n\r\n  &:focus {\r\n    outline: none;\r\n    background: $bg-color;\r\n    box-shadow:  -5px -5px 10px #23201f,\r\n    5px 5px 10px #292625;\r\n  }\r\n}\r\n\r\n.input-sm-nui {\r\n  padding: 0.5rem;\r\n  height: 2rem;\r\n  font-size: 1.2rem;\r\n}\r\n\r\n.input-md-nui {\r\n  padding: 1rem;\r\n  height: 2rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.input-lg-nui {\r\n  padding: 1.5rem;\r\n  height: 2rem;\r\n  font-size: 2rem;\r\n}\r\n",
+                    "styleUrl": "./input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "templateData": "<div class=\"form\">\r\n  <input [class]=\"'input-nui ' + getSize()\" [placeholder]=\"placeholder\" type=\"text\">\r\n</div>\r\n"
+        },
+        {
+            "name": "ListComponent",
+            "id": "component-ListComponent-dba6d3fadedf17e3034e89f74c9d058626b910167960a2615673e65a563bb3174666ae5d863248cc4269ed020a89c88d9732d766d82f7a753f99fa439dc04783",
+            "file": "projects/neumorphy-ui/src/lib/list/list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-list",
+            "styleUrls": [
+                "./list.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-list',\r\n  templateUrl: './list.component.html',\r\n  styleUrls: ['./list.component.css']\r\n})\r\nexport class ListComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "ul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n",
+                    "styleUrl": "./list.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ul>\r\n  <ng-content>\r\n  </ng-content>\r\n</ul>\r\n"
+        },
+        {
+            "name": "ListItemComponent",
+            "id": "component-ListItemComponent-f751091195868be347c0b2be4d590a1aebd2c0dda386515f52023e040f9aed04cf5d802f4b6269a473bcfb4125b514ba362f6f871bc62aa46879d7363edbe3f5",
+            "file": "projects/neumorphy-ui/src/lib/list-item/list-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-list-item",
+            "styleUrls": [
+                "./list-item.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list-item.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-list-item',\r\n  templateUrl: './list-item.component.html',\r\n  styleUrls: ['./list-item.component.css']\r\n})\r\nexport class ListItemComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./list-item.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<li>\r\n  <ng-content></ng-content>\r\n</li>\r\n"
+        },
+        {
+            "name": "MainComponent",
+            "id": "component-MainComponent-ff54a233727ebe4a0ac8c6ce784ecc132a1128d13bc517f848850e68b6723aef0a7dce99439fe784941b2b59e5e941be8037abfab44610651fa9bc7389e40e72",
+            "file": "projects/neumorphy-ui/src/lib/main/main.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-main",
+            "styleUrls": [
+                "./main.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./main.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-main',\r\n  templateUrl: './main.component.html',\r\n  styleUrls: ['./main.component.scss']\r\n})\r\nexport class MainComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  \r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0 1rem;\r\n  flex-wrap: wrap;\r\n  color: #ECEBE4;\r\n}\r\n",
+                    "styleUrl": "./main.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-content></ng-content>"
+        },
+        {
+            "name": "MenuComponent",
+            "id": "component-MenuComponent-6b216ec9549b28f80ca5f94fd33dfecf34b0c522b88decd08a2da075658b2f54a470263cf525d7f1d8141e4ed855d86ab1b6140b72c4e4cb2ccf16014075bc15",
+            "file": "projects/neumorphy-ui/src/lib/menu/menu.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-menu",
+            "styleUrls": [
+                "./menu.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./menu.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "mode",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "verticalCenter",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getMode",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isVerticalCenter",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"verticalCenter\"",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-menu',\r\n  templateUrl: './menu.component.html',\r\n  styleUrls: ['./menu.component.scss']\r\n})\r\nexport class MenuComponent implements OnInit {\r\n\r\n  @Input() mode?: string;\r\n  @Input() verticalCenter: boolean = false;\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  getMode(){\r\n    return this.mode;\r\n  }\r\n\r\n  isVerticalCenter(){\r\n    return this.verticalCenter ? \"verticalCenter\" : \"\";\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\r\n  width: 100%;\r\n  max-height: 5rem;\r\n  color: azure;\r\n  \r\n  &.fixed-bot {\r\n    position: fixed;\r\n    bottom: 0px;\r\n  }\r\n  \r\n  &.fixed-top {\r\n    position: fixed;\r\n    top: 0px;\r\n  }\r\n  nui-row{\r\n    &.verticalCenter{\r\n      align-items: center;\r\n    }\r\n  }\r\n}\r\n\r\n\r\n",
+                    "styleUrl": "./menu.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div>\r\n  <nui-row [class]=\"isVerticalCenter()\">\r\n    <ng-content id=\"buttons\"></ng-content>\r\n  </nui-row>\r\n</div>"
+        },
+        {
+            "name": "NeumorphyUIComponent",
+            "id": "component-NeumorphyUIComponent-7feab9a724ade77da369d760110c5458f432a03473366481a9b66950262afaa2b85a832bb20cc4596390ce04c87d52286438dbfa7875aa1973c44775cd35d287",
+            "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-neumorphyUI",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  neumorphy-ui works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-neumorphyUI',\r\n  template: `\r\n    <p>\r\n      neumorphy-ui works!\r\n    </p>\r\n  `,\r\n  styles: [\r\n  ]\r\n})\r\nexport class NeumorphyUIComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "RadiosComponent",
+            "id": "component-RadiosComponent-cc36f3e09be8a36e3dc8a45d4431ce0246d6b1e26151257807961563220b514e6b20b72468667ced4507fa8ae2e183abb5c20ae26e0290204b63d9f1e6c4e847",
+            "file": "projects/neumorphy-ui/src/lib/radios/radios.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-radios",
+            "styleUrls": [
+                "./radios.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./radios.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'default label'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-radios',\r\n  templateUrl: './radios.component.html',\r\n  styleUrls: ['./radios.component.scss']\r\n})\r\nexport class RadiosComponent implements OnInit {\r\n  @Input() id: string = '';\r\n  @Input() label: string = 'default label';\r\n  @Input() disabled: boolean = false;\r\n  @Input() checked: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./radios.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"form-check\">\r\n  <input class=\"form-check-input\" type=\"radio\" name=\"flexRadioDefault\" [id]=\"id\" [disabled]=\"disabled\" [checked]=\"checked\">\r\n  <label class=\"form-check-label\" [for]=\"id\">\r\n    {{label}}\r\n  </label>\r\n</div>\r\n"
+        },
+        {
+            "name": "RowComponent",
+            "id": "component-RowComponent-80e649907f5f0ab0a7f6a7f697d8a1d9886e8867336fa4a8213e40cc066fb48cb96a1237b028b89646f140da158a9b66625690d02a779a3683aa1cc9d61d9eb7",
+            "file": "projects/neumorphy-ui/src/lib/row/row.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-row",
+            "styleUrls": [
+                "./row.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./row.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-row',\r\n  templateUrl: './row.component.html',\r\n  styleUrls: ['./row.component.scss']\r\n})\r\nexport class RowComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host{\r\n    width: 100%;\r\n    display: flex;\r\n    // padding: 0.5rem 0.5rem;\r\n    flex-direction: row;\r\n    // gap:0.5rem;\r\n    flex-wrap: wrap;\r\n}\r\n",
+                    "styleUrl": "./row.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-content></ng-content>\r\n"
+        },
+        {
+            "name": "SliderComponent",
+            "id": "component-SliderComponent-886c32c0f3553b5b5bb0360acd9cd33c60f1f19015536061ab86dd37512436261493fb46ffc39d8ceec36578c2280d2d50de029962b6f90c8e163beb6d0d722d",
+            "file": "projects/neumorphy-ui/src/lib/slider/slider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-slider",
+            "styleUrls": [
+                "./slider.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./slider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "actual",
+                    "defaultValue": "'0:00'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "end",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "rangeId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "withTimeInfo",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "sizeElement",
+                    "defaultValue": "\"30% 100%\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "3",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getType",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getValue",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "rangeChangeHandle",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setValue",
+                    "args": [
+                        {
+                            "name": "newV",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "newV",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-slider',\r\n  templateUrl: './slider.component.html',\r\n  styleUrls: ['./slider.component.scss']\r\n})\r\nexport class SliderComponent implements OnInit {\r\n\r\n  @Input() actual?:string = '0:00';\r\n  @Input() end?:string;\r\n  @Input() withTimeInfo:boolean = false;\r\n  @Input() rangeId?:string;\r\n  @Input() label?:string;\r\n  @Input() type?:string;\r\n\r\n  constructor() { }\r\n\r\n  value:number = 3;\r\n  sizeElement:string = \"30% 100%\";\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  rangeChangeHandle(event:any){\r\n    this.setValue(event.srcElement.value);\r\n    this.sizeElement = event.srcElement.value*10 +'% 100%';\r\n  }\r\n\r\n  getValue(){\r\n    return this.value;\r\n  }\r\n  setValue(newV:number){\r\n    this.value = newV;\r\n  }\r\n\r\n  getType(){\r\n    return this.type;\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');\r\n\r\n:host {\r\n  width: 100%;\r\n\r\n  .slider { \r\n    input[type=\"range\"] {\r\n      position: relative;\r\n      z-index: 1;\r\n      width: 100%;\r\n      -webkit-appearance: none;\r\n      height: 0.3rem;\r\n      border-radius: 1rem;\r\n      background: #201E1D linear-gradient(100deg, rgba(250, 164, 73, 1) 0%, rgba(246, 204, 110, 1) 50%, rgba(250, 164, 73, 1) 100%) no-repeat;\r\n\r\n      &::after {\r\n        position: absolute;\r\n        z-index: -1;\r\n        top: -2px;\r\n        left: -2px;\r\n        display: inline-block;\r\n        content: \"\";\r\n        width: 101%;\r\n        height: 0.4rem;\r\n        border: 0.09rem solid #413B3A;\r\n        border-radius: 1rem;\r\n      }\r\n\r\n      &::-webkit-slider-runnable-track {\r\n        -webkit-appearance: none;\r\n        box-shadow: none;\r\n        border: none;\r\n        background: transparent;\r\n      }\r\n\r\n      &::-webkit-slider-thumb {\r\n        z-index: 1;\r\n        -webkit-appearance: none;\r\n        height: 1.2rem;\r\n        width: 1.2rem; /* largeur du bord */\r\n        border: 0.3rem solid #ECEBE4;\r\n        border-radius: 50%;\r\n        background: linear-gradient(160deg, rgba(32, 30, 29, 1) 35%, rgba(108, 99, 96, 1) 100%);\r\n        box-shadow: 0px 1px 15px 3px #faa44933,\r\n        0px 1px 15px 3px #f6cc6e33;\r\n      }\r\n    }\r\n\r\n    label {\r\n      text-transform: capitalize;\r\n      font-size: small;\r\n      color: #ECEBE4;\r\n    }\r\n    span{\r\n      font-family: Mukta, sans-serif;\r\n      &:last-child{\r\n        float: right;\r\n      }\r\n    }\r\n  }\r\n\r\n  // &.curve-right{\r\n  //     width: 30%;\r\n  //     margin: 2rem 0rem;\r\n  //     .slider {\r\n\r\n  //         input[type=\"range\"]{\r\n\r\n  //             clip-path: ellipse(5rem 5rem at 0 10% 20%)\r\n  //         }\r\n\r\n  //         label{\r\n  //             display: none;\r\n  //         }\r\n  //     }\r\n  // }\r\n}\r\n",
+                    "styleUrl": "./slider.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 15
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"slider\">\r\n    <label for=\"{{rangeId}}\">{{label}}</label>\r\n    <input \r\n        type=\"range\" \r\n        id=\"{{rangeId}}\" \r\n        [value]=\"value\" \r\n        min=\"0\" \r\n        max=\"10\" \r\n        (input)=\"rangeChangeHandle($event)\" \r\n        [style.background-size]=\"sizeElement\"\r\n    >\r\n\r\n    <span *ngIf=\"withTimeInfo\">{{actual}}</span>\r\n    <span *ngIf=\"withTimeInfo\">{{end}}</span>\r\n</div>"
+        },
+        {
+            "name": "TextComponent",
+            "id": "component-TextComponent-bc69fc5e70e3271eeb77af31f48ccc02dd5b60deaba5a364f9d6988ceeb5d38a7f41569c467f747dac352d1ece323a0534a7b334ceb3b84fd0ca3ecd075bca1a",
+            "file": "projects/neumorphy-ui/src/lib/text/text.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-text",
+            "styleUrls": [
+                "./text.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "bold",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "italic",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getClasses",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSizeComponent",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"text-sm-nui \" | \"text-md-nui \" | \"text-lg-nui \"",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isBold",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"text-bold-nui\"",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isItalic",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"text-italic-nui\"",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-text',\r\n  templateUrl: './text.component.html',\r\n  styleUrls: ['./text.component.scss']\r\n})\r\nexport class TextComponent implements OnInit {\r\n\r\n  @Input() bold = false;\r\n  @Input() italic = false;\r\n  @Input() size = 'sm';\r\n\r\n  constructor() { }\r\n\r\n  isBold() {\r\n    return this.bold ? 'text-bold-nui' : '';\r\n  }\r\n\r\n  isItalic() {\r\n    return this.italic ? 'text-italic-nui' : '';\r\n  }\r\n\r\n  getClasses() {\r\n    return `${this.isBold()} ${this.isItalic()} ${this.getSizeComponent()}`\r\n\r\n  }\r\n\r\n  getSizeComponent() {\r\n    switch (this.size) {\r\n      case 'sm':\r\n        return 'text-sm-nui '\r\n\r\n      case 'md':\r\n        return 'text-md-nui '\r\n\r\n      case 'lg':\r\n        return 'text-lg-nui '\r\n\r\n      default:\r\n        throw SyntaxError;\r\n    }\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');\r\n\r\n:host {\r\n  p {\r\n  font-family: Mukta, sans-serif;\r\n\r\n  &.text-bold-nui {\r\n      font-weight: bold;\r\n    }\r\n\r\n    &.text-italic-nui {\r\n      font-style: italic;\r\n    }\r\n\r\n    &.text-sm-nui  {\r\n      font-size: 1rem;\r\n    }\r\n\r\n    &.text-md-nui {\r\n      font-size: 1.5rem;\r\n    }\r\n\r\n    &.text-lg-nui {\r\n      font-size: 2rem;\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "./text.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p [class]=\"getClasses()\">\r\n  <ng-content></ng-content>\r\n</p>\r\n"
+        },
+        {
+            "name": "TitleComponent",
+            "id": "component-TitleComponent-c21e1dc2e96227ae15ff6f7af0ee7e07f1e4b39532973c513c8bdf0b5bfe7ff72996b6a4b6112a80d1b9dca6e92fdb502fe60baeea377fc9ee94bd2e6c4f1ff8",
+            "file": "projects/neumorphy-ui/src/lib/title/title.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-title",
+            "styleUrls": [
+                "./title.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./title.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "bold",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "italic",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getClasses",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isBold",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"title-bold-nui\"",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isItalic",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "\"\" | \"title-italic-nui\"",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'nui-title',\r\n  templateUrl: './title.component.html',\r\n  styleUrls: ['./title.component.scss']\r\n})\r\nexport class TitleComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n\r\n  @Input() bold = false;\r\n  @Input() italic = false;\r\n\r\n  isBold() {\r\n    return this.bold ? 'title-bold-nui' : '';\r\n  }\r\n\r\n  isItalic() {\r\n    return this.italic ? 'title-italic-nui' : '';\r\n  }\r\n\r\n  getClasses() {\r\n    return `${this.isBold()} ${this.isItalic()}`\r\n\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');\r\n\r\n:host {\r\n  h1 {\r\n    font-family: Mukta, sans-serif;\r\n\r\n    &.text-bold-nui {\r\n      font-weight: bold;\r\n    }\r\n\r\n    &.text-italic-nui {\r\n      font-style: italic;\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "./title.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h1 [class]=\"getClasses()\">\r\n  <ng-content></ng-content>\r\n</h1>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "NeumorphyUIModule",
+            "id": "module-NeumorphyUIModule-3dbad7a7e12fb1cdf37e987e2e9d04e5d4629725d84f40043cb0cd03bb7c7f39870b4c065809721771d367fad4809e37c87bb3b439566d7deb90df57a2b3a422",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\r\nimport {CommonModule} from \"@angular/common\";\r\n// @ts-ignore\r\nimport {NgxSplideModule} from 'ngx-splide';\r\nimport {NeumorphyUIComponent} from './neumorphy-ui.component';\r\nimport {CardComponent} from './card/card.component';\r\nimport {ButtonComponent} from './button/button.component';\r\nimport {MainComponent} from './main/main.component';\r\nimport {RowComponent} from './row/row.component';\r\nimport {MenuComponent} from './menu/menu.component';\r\nimport {SliderComponent} from './slider/slider.component';\r\nimport {InputComponent} from './input/input.component';\r\nimport {CheckboxComponent} from './checkbox/checkbox.component';\r\nimport {ErrorComponent} from './error/error.component';\r\nimport {CarouselComponent} from './carousel/carousel.component';\r\nimport {ListComponent} from './list/list.component';\r\nimport {ListItemComponent} from './list-item/list-item.component';\r\nimport {TextComponent} from './text/text.component';\r\nimport {TitleComponent} from './title/title.component';\r\nimport {RadiosComponent} from './radios/radios.component';\r\nimport {IconButtonComponent} from './icon-button/icon-button.component';\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ErrorComponent,\r\n  RadiosComponent,\r\n  CarouselComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n  TextComponent,\r\n  TitleComponent,\r\n  IconButtonComponent,\r\n];\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    NgxSplideModule\r\n  ],\r\n  exports: [\r\n    ...COMPONENTS,\r\n    NeumorphyUIComponent,\r\n    NgxSplideModule\r\n  ]\r\n})\r\nexport class NeumorphyUIModule {\r\n}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "CarouselComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "ErrorComponent"
+                        },
+                        {
+                            "name": "IconButtonComponent"
+                        },
+                        {
+                            "name": "InputComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
+                            "name": "MainComponent"
+                        },
+                        {
+                            "name": "MenuComponent"
+                        },
+                        {
+                            "name": "NeumorphyUIComponent"
+                        },
+                        {
+                            "name": "RadiosComponent"
+                        },
+                        {
+                            "name": "RowComponent"
+                        },
+                        {
+                            "name": "SliderComponent"
+                        },
+                        {
+                            "name": "TextComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "CarouselComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "ErrorComponent"
+                        },
+                        {
+                            "name": "IconButtonComponent"
+                        },
+                        {
+                            "name": "InputComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
+                            "name": "MainComponent"
+                        },
+                        {
+                            "name": "MenuComponent"
+                        },
+                        {
+                            "name": "NeumorphyUIComponent"
+                        },
+                        {
+                            "name": "RadiosComponent"
+                        },
+                        {
+                            "name": "RowComponent"
+                        },
+                        {
+                            "name": "SliderComponent"
+                        },
+                        {
+                            "name": "TextComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "button1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    alert('test');\r\n  }\r\n}"
+            },
+            {
+                "name": "button1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'OK',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    console.log('OK');\r\n  }\r\n}"
+            },
+            {
+                "name": "button2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  active: false,\r\n  size: 'sm',\r\n  action: function () {\r\n    alert('test');\r\n  }\r\n}"
+            },
+            {
+                "name": "button2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'Annuler',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    console.log('Annulé');\r\n  }\r\n}"
+            },
+            {
+                "name": "ColImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ErrorComponent,\r\n  RadiosComponent,\r\n  CarouselComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n  TextComponent,\r\n  TitleComponent,\r\n  IconButtonComponent,\r\n]"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Image",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "img",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
+            },
+            {
+                "name": "Info",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "InfoPrompt",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Item",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "items",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "['Item 1', 'Item 2']"
+            },
+            {
+                "name": "ModalBottom",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Radios",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Radios",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "RowImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Success",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardComponent>",
+                "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n  template: `<nui-card>{{ ngContent }}</nui-card>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CheckboxComponent>",
+                "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ErrorComponent>",
+                "defaultValue": "(args: ErrorComponent) => ({\r\n  component: ErrorComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<IconButtonComponent>",
+                "defaultValue": "(args: IconButtonComponent) => ({\r\n  component: IconButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<InputComponent>",
+                "defaultValue": "(args: InputComponent) => ({\r\n  component: InputComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<MainComponent>",
+                "defaultValue": "(args: MainComponent) => ({\r\n  component: MainComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<MenuComponent>",
+                "defaultValue": "(args: MenuComponent) => ({\r\n  component: MenuComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<RadiosComponent>",
+                "defaultValue": "(args: RadiosComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<RowComponent>",
+                "defaultValue": "(args: RowComponent) => ({\r\n  component: RowComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/neumorphy-ui/src/lib/button/button.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/card/card.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "button1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    alert('test');\r\n  }\r\n}"
+                },
+                {
+                    "name": "button2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  active: false,\r\n  size: 'sm',\r\n  action: function () {\r\n    alert('test');\r\n  }\r\n}"
+                },
+                {
+                    "name": "ColImage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Image",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "img",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
+                },
+                {
+                    "name": "Item",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "items",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "['Item 1', 'Item 2']"
+                },
+                {
+                    "name": "RowImage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CardComponent>",
+                    "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n  template: `<nui-card>{{ ngContent }}</nui-card>`\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<IconButtonComponent>",
+                    "defaultValue": "(args: IconButtonComponent) => ({\r\n  component: IconButtonComponent,\r\n  props: args,\r\n  /*  template: `<nui-button [label]=\"'label'\" [size]=\"'size'\" [rounded]=\"false\" [active]=\"false\"></nui-button>`,*/\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/input/input.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<InputComponent>",
+                    "defaultValue": "(args: InputComponent) => ({\r\n  component: InputComponent,\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/main/main.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MainComponent>",
+                    "defaultValue": "(args: MainComponent) => ({\r\n  component: MainComponent,\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/menu/menu.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MenuComponent>",
+                    "defaultValue": "(args: MenuComponent) => ({\r\n  component: MenuComponent,\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/row/row.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<RowComponent>",
+                    "defaultValue": "(args: RowComponent) => ({\r\n  component: RowComponent,\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/error/error.stories.ts": [
+                {
+                    "name": "button1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'OK',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    console.log('OK');\r\n  }\r\n}"
+                },
+                {
+                    "name": "button2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'Annuler',\r\n  active: true,\r\n  size: 'sm',\r\n  action: function () {\r\n    console.log('Annulé');\r\n  }\r\n}"
+                },
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Info",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "InfoPrompt",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ModalBottom",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Success",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ErrorComponent>",
+                    "defaultValue": "(args: ErrorComponent) => ({\r\n  component: ErrorComponent,\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  CardComponent,\r\n  ButtonComponent,\r\n  MainComponent,\r\n  RowComponent,\r\n  MenuComponent,\r\n  SliderComponent,\r\n  InputComponent,\r\n  CheckboxComponent,\r\n  ErrorComponent,\r\n  RadiosComponent,\r\n  CarouselComponent,\r\n  ListComponent,\r\n  ListItemComponent,\r\n  TextComponent,\r\n  TitleComponent,\r\n  IconButtonComponent,\r\n]"
+                }
+            ],
+            "projects/neumorphy-ui/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts": [
+                {
+                    "name": "Radios",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CheckboxComponent>",
+                    "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/neumorphy-ui/src/lib/radios/radios.stories.ts": [
+                {
+                    "name": "Radios",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<RadiosComponent>",
+                    "defaultValue": "(args: RadiosComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/IButton.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 8,
+                "coverageCount": "1/12",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/ICard.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Icard",
+                "coveragePercent": 0,
+                "coverageCount": "0/23",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/30",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ColImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "img",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Item",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "items",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RowImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/carousel/ICarousel.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ICarousel",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/carousel/carousel.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CarouselComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/carousel/image-interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ImageInterface",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/checkbox/ICheckbox.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ICheckbox",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/checkbox/checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Radios",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/IError.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IError",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ErrorComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Info",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "InfoPrompt",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ModalBottom",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Success",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/error/error.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/icon-button/IIconButton.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IIconButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/icon-button/icon-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/icon-button/icon-button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/input/IInput.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IInput",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/input/input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/list-item/IListItem.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IListItem",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/list-item/list-item.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListItemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/list/IList.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IList",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/list/list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/main/main.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MainComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/main/main.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/menu/menu.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MenuComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/menu/menu.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/neumorphy-ui.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NeumorphyUIComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/neumorphy-ui.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/neumorphy-ui.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "NeumorphyUIService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/radios/IRadios.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IRadios",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/radios/radios.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RadiosComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Radios",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/radios/radios.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/row/row.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RowComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/row/row.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/services/parameters.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "ParametersService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/slider/ISlider.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ISlider",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/slider/slider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SliderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/text/IText.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IText",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/text/text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/title/ITitle.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ITitle",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/lib/title/title.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/neumorphy-ui/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

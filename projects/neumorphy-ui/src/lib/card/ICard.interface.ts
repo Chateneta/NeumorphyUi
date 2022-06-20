@@ -22,5 +22,5 @@ export interface Icard {
   imgHeight?: string;
   padding?: string;
   items?: string[];
-  ngContent?:string;
+  ngContent?: string;
 }

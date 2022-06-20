@@ -14,7 +14,7 @@
   &:focus {
     outline: none;
     background: $bg-color;
-    box-shadow:  -5px -5px 10px #23201f,
+    box-shadow: -5px -5px 10px #23201f,
     5px 5px 10px #292625;
   }
 }
@@ -35,4 +35,9 @@
   padding: 1.5rem;
   height: 2rem;
   font-size: 2rem;
+}
+
+::placeholder {
+  color: #ffffff26;
+  opacity: 1;
 }

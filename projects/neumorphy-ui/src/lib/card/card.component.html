@@ -55,7 +55,7 @@
      [style.align-items]="align"
      [style.padding]="getPadding()"
      [style.width]="width">
-  <img [src]="itemImage" [style.border-radius]="borderRadius+'px'"
+  <img *ngIf="itemImage" [src]="itemImage" [style.border-radius]="borderRadius+'px'"
        alt="image" class="item-image">
   <div class="item-content" *ngIf="title || subtitle">
     <div class="title" *ngIf="title">{{title}}</div>

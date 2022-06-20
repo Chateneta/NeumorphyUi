@@ -34,8 +34,6 @@ export class CardComponent implements OnInit {
 
   @Output() action = new EventEmitter();
 
-  @Output() action : any;
-
   getBackgroundColor() {
     switch (this.color) {
       case 'orangeyellow':
@@ -118,7 +116,7 @@ export class CardComponent implements OnInit {
     }
   }
 
-  buttonItemAction(){
+  buttonItemAction() {
     this.action.emit();
   }
 

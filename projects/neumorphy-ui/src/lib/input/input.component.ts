@@ -9,7 +9,10 @@ export class InputComponent {
 
   @Input() size = 'sm';
   @Input() placeholder = 'Type anything ...';
-  constructor() { }
+  @Input() control = '';
+
+  constructor() {
+  }
 
   getSize() {
     return 'input-sm-nui'

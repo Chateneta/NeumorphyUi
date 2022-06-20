@@ -19,6 +19,7 @@ import {TextComponent} from './text/text.component';
 import {TitleComponent} from './title/title.component';
 import {RadiosComponent} from './radios/radios.component';
 import {IconButtonComponent} from './icon-button/icon-button.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 const COMPONENTS = [
   CardComponent,
@@ -44,10 +45,11 @@ const COMPONENTS = [
     ...COMPONENTS,
     NeumorphyUIComponent,
   ],
-  imports: [
-    CommonModule,
-    NgxSplideModule
-  ],
+    imports: [
+        CommonModule,
+        NgxSplideModule,
+        ReactiveFormsModule
+    ],
   exports: [
     ...COMPONENTS,
     NeumorphyUIComponent,

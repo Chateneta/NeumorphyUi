@@ -16,8 +16,8 @@ export class SliderComponent implements OnInit {
 
   constructor() { }
 
-  value:number = 3;
-  sizeElement:string = "30% 100%";
+  value:number = 0;
+  sizeElement:string = "0% 100%";
 
   ngOnInit(): void {
   }

@@ -8,13 +8,13 @@
         perPage: 3,
         pagination:false,
         arrows:false
-
     }"
     (onMoved)="onSplideMoved($event)"
+    [selectedSlideIndex]="actualIndex"
 >
     <splide-slide *ngFor="let image of images;let index = index">
-        <div id="toto" >
-            <img [src]="image.src" alt="" [id]="index" #img/>
+        <div class="imgContainer">
+            <img [src]="image.src" alt="" [ngClass]="actualIndex == index ?'active':'' " [id]="index"/>
         </div>
     </splide-slide>
 </splide>

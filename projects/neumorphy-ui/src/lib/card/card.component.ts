@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'nui-card',
@@ -27,6 +27,8 @@ export class CardComponent implements OnInit {
   @Input() imgHeight = '';
   @Input() padding = 'sm'; //sm / md / lg / xl
   @Input() items : any;
+
+  @Output() action : any;
 
   getBackgroundColor() {
     switch (this.color) {
@@ -106,6 +108,10 @@ export class CardComponent implements OnInit {
       default:
         return '1em 2em'
     }
+  }
+
+  buttonItemAction(){
+    this.action.emit();
   }
 
   constructor() {

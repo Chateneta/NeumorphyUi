@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'nui-slider',
@@ -13,27 +13,25 @@ export class SliderComponent implements OnInit {
   @Input() rangeId?:string;
   @Input() label?:string;
   @Input() type?:string;
+  @Input() value:number = 0;
+  @Output() changeValue: EventEmitter<number> = new EventEmitter<number>()
 
   constructor() { }
 
-  value:number = 0;
   sizeElement:string = "0% 100%";
 
   ngOnInit(): void {
   }
 
   rangeChangeHandle(event:any){
-    this.setValue(event.srcElement.value);
-    this.sizeElement = event.srcElement.value*10 +'% 100%';
+   this.changeValue.next(event.srcElement.value)
+   this.value = event.srcElement.value
   }
 
-  getValue(){
-    return this.value;
+  ngOnChanges(change:any){
+    this.sizeElement = this.value+'% 100%';
   }
-  setValue(newV:number){
-    this.value = newV;
-  }
-
+  
   getType(){
     return this.type;
   }

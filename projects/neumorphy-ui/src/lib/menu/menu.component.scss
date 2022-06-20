@@ -1,0 +1,22 @@
+:host {
+  width: 100%;
+  max-height: 5rem;
+  color: azure;
+  
+  &.fixed-bot {
+    position: fixed;
+    bottom: 0px;
+  }
+  
+  &.fixed-top {
+    position: fixed;
+    top: 0px;
+  }
+  nui-row{
+    &.verticalCenter{
+      align-items: center;
+    }
+  }
+}
+
+

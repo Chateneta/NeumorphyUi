@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "neumorphyUI": {
+      "projectType": "library",
+      "root": "projects/neumorphy-ui",
+      "sourceRoot": "projects/neumorphy-ui/src",
+      "prefix": "nui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/neumorphy-ui/ng-package.json",
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/neumorphy-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              
+              "tsConfig": "projects/neumorphy-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/neumorphy-ui/src/test.ts",
+            "tsConfig": "projects/neumorphy-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/neumorphy-ui/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "neumorphyUI"
 }

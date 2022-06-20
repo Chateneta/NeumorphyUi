@@ -1,0 +1,70 @@
+<div class="card" *ngIf="display === 'buttons'"
+     [style.flex-direction]="sense"
+     [style.background]="getBackgroundColor()"
+     [style.border-radius]="borderRadius+'px'"
+     [style.color]="getColor()"
+     [style.box-shadow]="getElevation()"
+     [style.justify-content]="justify"
+     [style.align-items]="align"
+     [style.text-align]="textAlign"
+     [style.padding]="getPadding()"
+     [style.width]="width">
+
+  <div class="image-header" *ngIf="headerImage" [style.margin-bottom]="sense === 'column'? '1em' : 0"
+       [style.margin-right]="sense === 'row' ? '1em' : 0">
+    <img [src]="headerImage"
+         [style.border-radius]="borderRadius+'px'"
+         [style.height]="imgHeight"
+         style="box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;"
+         alt="image">
+  </div>
+  <div class="content"
+       [style.justify-content]="justify"
+       [style.align-items]="align">
+    <div class="title" *ngIf="title">{{title}}</div>
+    <div class="subtitle" *ngIf="subtitle">{{subtitle}}</div>
+    <div class="description" *ngIf="description">{{description}}</div>
+    <div class="items" *ngIf="items">
+      <div *ngFor="let item of items" style="display: flex;flex-direction: column">
+        <hr>
+        <p style="margin: 0.3em 0">{{item}}</p>
+      </div>
+    </div>
+    <div class="buttons" *ngIf="button1 || button2" style="justify-content:center">
+      <nui-button [active]="button1!.active!" [size]="button1!.size!" [label]="button1!.label!"
+                  [style]="button2?'margin-right: 1em':null" (clic)="button1!.action?.()"></nui-button>
+      <nui-button [active]="button2!.active!" [size]="button2!.size!" [label]="button2!.label!"
+                  (clic)="button1!.action?.()"></nui-button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="display==='image'" class="card"
+     [style.width]="width">
+  <img [src]="imgSrc"
+       alt="image" class="image">
+</div>
+
+<div *ngIf="display==='item'" class="card"
+     [style.flex-direction]="sense"
+     [style.background]="getBackgroundColor()"
+     [style.border-radius]="borderRadius+'px'"
+     [style.color]="getColor()"
+     [style.box-shadow]="getElevation()"
+     [style.justify-content]="justify"
+     [style.align-items]="align"
+     [style.padding]="getPadding()"
+     [style.width]="width">
+  <img *ngIf="itemImage" [src]="itemImage" [style.border-radius]="borderRadius+'px'"
+       alt="image" class="item-image">
+  <div class="item-content" *ngIf="title || subtitle">
+    <div class="title" *ngIf="title">{{title}}</div>
+    <div class="subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
+  </div>
+  <div *ngIf="buttonItem" style="position: absolute;right: 1em">
+    <nui-icon-button [pushPull]="false" [active]="buttonItem.active!" size="sm"
+                     (clic)="buttonItemAction?.()">
+      <ng-content></ng-content>
+    </nui-icon-button>
+  </div>
+</div>

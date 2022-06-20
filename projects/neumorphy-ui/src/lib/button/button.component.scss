@@ -1,0 +1,47 @@
+@import "../../../assets/scss/variables";
+
+:host button {
+  background: $bg-color;
+  border: none;
+  font-size: 1rem;
+  color: #ecebe4;
+  box-shadow: $bs-first-elevation $bs-first-color, $bs-second-elevation $bs-second-color;
+  min-width: 5rem;
+  max-width: 10rem;
+  height: 2.5rem;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
+  }
+
+  &.btn-active-nui {
+    box-shadow: inset $bs-first-elevation $bs-first-color, inset $bs-second-elevation $bs-second-color;
+    color: #faa449;
+  }
+
+  &.btn-rounded-nui {
+    border-radius: 50%;
+  }
+
+  &.btn-rect-nui {
+    border-radius: 15px;
+  }
+
+  &.btn-sm-nui {
+    padding: 0.5rem;
+  }
+
+  &.btn-md-nui {
+    padding: 1rem;
+  }
+
+  &.btn-lg-nui {
+    padding: 1.5rem;
+  }
+}
+
+:host button:focus-visible, :host button:focus {
+  outline: none;
+}

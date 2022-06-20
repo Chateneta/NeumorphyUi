@@ -1,4 +1,6 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {IButton} from "../button/IButton.interface";
+import {IIconButton} from "../icon-button/IIconButton.interface";
 
 @Component({
   selector: 'nui-card',
@@ -10,23 +12,27 @@ export class CardComponent implements OnInit {
   @Input() title = '';
   @Input() subtitle = '';
   @Input() description = '';
-  @Input() button1: any;//Button
-  @Input() button2: any; //Button
-  @Input() buttonItem: any; //Button
-  @Input() color = 'alabaster'; //orangeyellow / raisin / alabaster / rajah
+  @Input() button1!: IButton;//Button
+  @Input() button2!: IButton; //Button
+  @Input() buttonItem!: IIconButton; //Button
+  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';
   @Input() borderRadius = '12'; //Choisir le border radius
-  @Input() elevation = 'sm'; //sm / md / lg / xl
-  @Input() display = 'buttons'; //buttons / image / item
+  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';
+  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';
   @Input() headerImage = '';
   @Input() imgSrc = '';
-  @Input() justify = 'left'; //left / right / center
-  @Input() align = 'flex-start'; //flex-start / flex-end / center
+  @Input() justify: 'left' | 'right' | 'center' = 'center';
+  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'center';
+  @Input() textAlign: 'center' | 'start' | 'end' = 'center';
   @Input() itemImage = '';
   @Input() width = '';
   @Input() sense = 'column';
   @Input() imgHeight = '';
-  @Input() padding = 'sm'; //sm / md / lg / xl
-  @Input() items : any;
+  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
+  @Input() items: string[] | undefined;
+  @Input() ngContent!: string;
+
+  @Output() action = new EventEmitter();
 
   @Output() action : any;
 
@@ -79,17 +85,19 @@ export class CardComponent implements OnInit {
         col = ['#d1d1d1', '#ffffff']
         break;
     }
+
+    const defaultBoxShadow = `10px 10px 20px ${col[0]}, -10px -10px 20px ${col[1]}`;
     switch (this.elevation) {
       case 'sm':
-        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]
+        return defaultBoxShadow
       case 'md':
-        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]
+        return `15px 15px 30px ${col[0]}, -15px -15px 30px ${col[1]}`
       case 'lg':
-        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]
+        return `24px 24px 48px ${col[0]}, -24px 24px 48px ${col[1]}`
       case 'xl':
-        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]
+        return `32px 32px 64px ${col[0]}, -32px -32px 64px ${col[1]}`
       default:
-        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]
+        return defaultBoxShadow
     }
   }
 
@@ -119,5 +127,4 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

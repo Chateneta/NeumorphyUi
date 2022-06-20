@@ -19,6 +19,10 @@ After building your library with `ng build neumorphyUI`, go to the dist folder `
 
 Run `ng test neumorphyUI` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Run the StoryBook
+
+Run `npm run storybook` to launch the Storybook and see the documentation of our library and the operation of each component.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

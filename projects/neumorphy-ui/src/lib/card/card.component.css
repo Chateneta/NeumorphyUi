@@ -17,14 +17,13 @@
   letter-spacing: .0125em;
   line-height: 2rem;
   word-break: break-all;
-  text-transform: uppercase;
 }
 
 .subtitle {
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.375rem;
-  letter-spacing: .0071428571em;
+  letter-spacing: .01em;
   margin-bottom: 1rem;
   color: #4a4a4a;
 }
@@ -39,6 +38,7 @@
 
 .buttons {
   display: flex;
+  width: 100%;
 }
 
 .orangeyellow {
@@ -74,12 +74,20 @@
   align-items: flex-start;
 }
 
+.item-image {
+  margin-right: 1em;
+  width: 4em;
+  height: 4em;
+  box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;;
+  object-fit: cover;
+}
+
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #4b4b4b;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
 }
 
@@ -90,7 +98,7 @@ hr {
   margin-bottom: 1em;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;

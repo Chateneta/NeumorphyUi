@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap%27');
+
+:host {
+  width: 100%;
+
+  .slider { 
+    input[type="range"] {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      -webkit-appearance: none;
+      height: 0.3rem;
+      border-radius: 1rem;
+      background: #201E1D linear-gradient(100deg, rgba(250, 164, 73, 1) 0%, rgba(246, 204, 110, 1) 50%, rgba(250, 164, 73, 1) 100%) no-repeat;
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: -2px;
+        left: -2px;
+        display: inline-block;
+        content: "";
+        width: 101%;
+        height: 0.4rem;
+        border: 0.09rem solid #413B3A;
+        border-radius: 1rem;
+      }
+
+      &::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+      }
+
+      &::-webkit-slider-thumb {
+        z-index: 1;
+        -webkit-appearance: none;
+        height: 1.2rem;
+        width: 1.2rem; /* largeur du bord */
+        border: 0.3rem solid #ECEBE4;
+        border-radius: 50%;
+        background: linear-gradient(160deg, rgba(32, 30, 29, 1) 35%, rgba(108, 99, 96, 1) 100%);
+        box-shadow: 0px 1px 15px 3px #faa44933,
+        0px 1px 15px 3px #f6cc6e33;
+      }
+    }
+
+    label {
+      text-transform: capitalize;
+      font-size: small;
+      color: #ECEBE4;
+    }
+    span{
+      font-family: Mukta, sans-serif;
+      &:last-child{
+        float: right;
+      }
+    }
+  }
+
+  // &.curve-right{
+  //     width: 30%;
+  //     margin: 2rem 0rem;
+  //     .slider {
+
+  //         input[type="range"]{
+
+  //             clip-path: ellipse(5rem 5rem at 0 10% 20%)
+  //         }
+
+  //         label{
+  //             display: none;
+  //         }
+  //     }
+  // }
+}

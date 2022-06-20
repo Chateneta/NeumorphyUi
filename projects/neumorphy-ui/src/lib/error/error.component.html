@@ -1,0 +1,15 @@
+<div [class.modal-bottom]="display === 'modal-bottom' ? true : null" [class.modal]="display === 'modal' ? true : null"
+     class="error">
+  <div class="content">
+    <span class="txt" [style.color]="getColor()">{{txt}}</span>
+    <button class="close" (click)="dismiss()">
+      <img src="/assets/img/icons8-close-60.png" alt="close" style="height: 2em">
+    </button>
+  </div>
+  <div *ngIf="button1 || button2" class="buttons" style="margin-top: 1em;">
+    <nui-button [active]="button1.active!" [size]="button1.size!" [label]="button1.label"
+                (clic)="button1.action?.();dismiss()" style="margin-right: 3em;"></nui-button>
+    <nui-button [active]="button2.active!" [size]="button2.size!" [label]="button2.label"
+                (clic)="button2.action?.();dismiss()"></nui-button>
+  </div>
+</div>

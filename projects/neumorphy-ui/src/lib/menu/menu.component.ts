@@ -1,26 +1,27 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'nui-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
 
-  @Input() theme?: string;
   @Input() mode?: string;
+  @Input() verticalCenter: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
-  getTheme(){
-    console.log(this.theme)
-    return this.theme;
-  }
   getMode(){
     return this.mode;
+  }
+
+  isVerticalCenter(){
+    return this.verticalCenter ? "verticalCenter" : "";
   }
 
 }

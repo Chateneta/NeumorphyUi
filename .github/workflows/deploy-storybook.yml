@@ -1,0 +1,24 @@
+name: deploy storybook on npm
+
+# Run this workflow every time a new commit pushed on develop to update storybook and use it on other feature
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  deploy-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: |
+          npm ci
+          cd projects/neumorphy-ui
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

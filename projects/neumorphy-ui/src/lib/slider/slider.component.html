@@ -1,0 +1,15 @@
+<div class="slider">
+    <label for="{{rangeId}}">{{label}}</label>
+    <input 
+        type="range" 
+        id="{{rangeId}}" 
+        [value]="value" 
+        min="0" 
+        max="10" 
+        (input)="rangeChangeHandle($event)" 
+        [style.background-size]="sizeElement"
+    >
+
+    <span *ngIf="withTimeInfo">{{actual}}</span>
+    <span *ngIf="withTimeInfo">{{end}}</span>
+</div>

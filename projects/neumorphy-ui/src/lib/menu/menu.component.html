@@ -1,7 +1,5 @@
-<div [class]="'menu '+ getMode() +' '+ getTheme()">
-    <nui-main>
-        <nui-row>
-            <ng-content id="buttons"></ng-content>
-        </nui-row>
-    </nui-main>
+<div>
+  <nui-row [class]="isVerticalCenter()">
+    <ng-content id="buttons"></ng-content>
+  </nui-row>
 </div>

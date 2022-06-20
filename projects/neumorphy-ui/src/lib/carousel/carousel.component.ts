@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewChildren, ElementRef, QueryList} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { ImageInterface } from './image-interface';
 
 @Component({
@@ -6,23 +6,21 @@ import { ImageInterface } from './image-interface';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent{
 
-  @Input() images ?: ImageInterface[];
-  @ViewChildren('img') myValue ?:QueryList<ElementRef>;
+  @Input() images: ImageInterface[] = [];
+  @Input() actualIndex: number = 0;
+  @Output() changeIndex: EventEmitter<number> = new EventEmitter<number>()
 
   constructor() { }
-  ngOnInit(): void {
-  }
 
   onSplideMoved(args:any){
-    this.myValue?.toArray().forEach(element => {
-      console.log(element.nativeElement.id, args[0])
-      if(element.nativeElement.id == args[0]){
-        element.nativeElement.style.transform = "scale(1.3)";
-      }else{
-        element.nativeElement.style.transform = "scale(1)";
-      }
-    });
+   this.actualIndex = args[0];
+   this.changeIndex.next(this.actualIndex)
+  }
+  ngOnChanges(change:any){
+    if(change.actualIndex){
+      this.actualIndex = change.actualIndex.currentValue
+    }
   }
 }
